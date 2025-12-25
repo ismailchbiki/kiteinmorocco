@@ -86,12 +86,12 @@ travel-booking-app/
 
 ## 🧠 Tech Stack
 
-- *Frontend* - React, React-Router, Tailwind CSS, Material-UI
-- *UI/UX* - AOS (Animate on scroll), Respnsive Grid layout, Custom Animations
-- *Authentication* - Firebase Authentication
-- *Storage* - Local Storage for bookings
-- *Icons* - Material Icons and React Icons
-- *Deployment* - Netlify
+- _Frontend_ - React, React-Router, Tailwind CSS, Material-UI
+- _UI/UX_ - AOS (Animate on scroll), Respnsive Grid layout, Custom Animations
+- _Authentication_ - Firebase Authentication
+- _Storage_ - Local Storage for bookings
+- _Icons_ - Material Icons and React Icons
+- _Deployment_ - Netlify
 
 ---
 
@@ -105,6 +105,7 @@ travel-booking-app/
 ---
 
 ## 🌐 Live Demo
+
 Check out the deployed project here: [Travellore](https://travellore.netlify.app)
 
 ---
@@ -136,6 +137,7 @@ Follow these steps to run the project on your system:
 ```
     npm run dev
 ```
+
 This will start your project at `http://localhost:5173/` (deafult Vite port)
 
 - 5. Build for production - If you want to create a production-ready build:
@@ -145,11 +147,12 @@ This will start your project at `http://localhost:5173/` (deafult Vite port)
 ```
 
 - 6. Deploy easily on Netlify, Vercel or GitHub Pages
+
 ---
 
 ## 👨‍💻 Author
 
 **Tushar Kumar**
 
-- *Website Link* - [https://travellore.netlify.app/]
-- *LinkedIn Profile* - [https://www.linkedin.com/in/tushar-kumar-developer/]
+- _Website Link_ - [https://travellore.netlify.app/]
+- _LinkedIn Profile_ - [https://www.linkedin.com/in/tushar-kumar-developer/]

@@ -3,34 +3,33 @@ import { useNavigate } from "react-router-dom";
 import Skeleton from "@mui/material/Skeleton";
 
 export default function HeroSection() {
-
   const [searchTerm, setSearchTerm] = useState("");
   const [loading, setLoading] = useState(true);
   const navigate = useNavigate();
-                                          //Loading Skeleton
+  //Loading Skeleton
   useEffect(() => {
-    const timer = setTimeout(() => setLoading(false), 100)
-    return () => clearTimeout(timer)
-  },[]);
+    const timer = setTimeout(() => setLoading(false), 100);
+    return () => clearTimeout(timer);
+  }, []);
 
   const handleSearch = () => {
-    if(searchTerm.trim() === ""){
-      alert("Please enter a destination to search!")
+    if (searchTerm.trim() === "") {
+      alert("Please enter a destination to search!");
       return;
     }
-    navigate(`/explore?search=${searchTerm}`)
+    navigate(`/explore?search=${searchTerm}`);
   };
 
-  const handleExplore = () =>{
+  const handleExplore = () => {
     navigate("/explore");
-  }
+  };
 
   if (loading) {
     return (
       <div className="w-full h-[90vh]">
-        <Skeleton variant="rectangular" width={"100%"} height={"100%"}/>
+        <Skeleton variant="rectangular" width={"100%"} height={"100%"} />
       </div>
-    )
+    );
   }
 
   return (
@@ -40,7 +39,7 @@ export default function HeroSection() {
         backgroundImage: `url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e')`,
         backgroundSize: "cover",
         backgroundPosition: "center",
-        margin:"30px 0 0 0"
+        margin: "30px 0 0 0",
       }}
     >
       {/* Overlay */}
@@ -64,13 +63,19 @@ export default function HeroSection() {
             onChange={(e) => setSearchTerm(e.target.value)}
             className="px-4 py-2 w-full text-black focus:outline-none"
           />
-          <button onClick={handleSearch} className="bg-yellow-500 w-full sm:w-auto px-6 py-2 text-black font-semibold hover:bg-yellow-600 transition">
+          <button
+            onClick={handleSearch}
+            className="bg-yellow-500 w-full sm:w-auto px-6 py-2 text-black font-semibold hover:bg-yellow-600 transition"
+          >
             Search
           </button>
         </div>
 
         {/* CTA Button */}
-        <button onClick={handleExplore} className="bg-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+        <button
+          onClick={handleExplore}
+          className="bg-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition"
+        >
           Explore Now
         </button>
       </div>

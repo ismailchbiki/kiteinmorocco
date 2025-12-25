@@ -5,7 +5,11 @@
     "description": "Iconic whitewashed houses and sunset views over the Aegean Sea.",
     "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80",
     "rating": 4.9,
-    "highlights": ["Sunset at Oia", "Blue-domed churches", "Cliffside villages"],
+    "highlights": [
+      "Sunset at Oia",
+      "Blue-domed churches",
+      "Cliffside villages"
+    ],
     "bestTime": "April - October",
     "stay": "3-5 Days",
     "activities": ["Wine Tasting", "Boat Tours", "Beach Relaxation"],
@@ -101,7 +105,11 @@
     "description": "Famous for Christ the Redeemer, beaches, and Carnival vibes.",
     "image": "https://unsplash.com/photos/bCv2c10nv0I/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MjR8fHJpbyUyMGRlJTIwamFuZXJpbyUyQyUyMGJyYXppbHxlbnwwfHx8fDE3NTkwMzUzMTZ8MA&force=true&w=640",
     "rating": 4.4,
-    "highlights": ["Christ the Redeemer", "Copacabana Beach", "Sugarloaf Mountain"],
+    "highlights": [
+      "Christ the Redeemer",
+      "Copacabana Beach",
+      "Sugarloaf Mountain"
+    ],
     "bestTime": "December - March",
     "stay": "4-6 Days",
     "activities": ["Beach Sports", "Street Parades", "Cable Car Rides"],

@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react'
-import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
+import React, { useEffect, useState } from "react";
+import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 
 export default function Contact() {
   const [loading, setLoading] = useState(true);
@@ -12,7 +12,6 @@ export default function Contact() {
   return (
     <section className="contact-section py-16 bg-gray-50" id="contact">
       <div className="max-w-6xl mx-auto px-6 lg:px-12">
-
         {/* Title */}
         <div className="text-center mb-12">
           {loading ? (
@@ -26,7 +25,8 @@ export default function Contact() {
                 Contact Us
               </h2>
               <p className="text-gray-600">
-                Have questions or ready to plan your trip? We'd love to hear from you!
+                Have questions or ready to plan your trip? We'd love to hear
+                from you!
               </p>
             </>
           )}
@@ -34,7 +34,6 @@ export default function Contact() {
 
         {/* Grid */}
         <div className="grid lg:grid-cols-2 gap-12 items-start">
-
           {/* Contact Form */}
           {loading ? (
             <div className="animate-pulse space-y-4 bg-white shadow-lg rounded-2xl p-8">
@@ -46,7 +45,9 @@ export default function Contact() {
             </div>
           ) : (
             <div className="bg-white shadow-lg rounded-2xl p-8">
-              <h3 className="text-2xl font-bold text-blue-800 mb-6">Send us a message</h3>
+              <h3 className="text-2xl font-bold text-blue-800 mb-6">
+                Send us a message
+              </h3>
               <form className="space-y-4">
                 <input
                   type="text"
@@ -89,9 +90,12 @@ export default function Contact() {
           ) : (
             <div className="space-y-8">
               <div>
-                <h3 className="text-2xl font-bold text-blue-800 mb-4">Get in Touch</h3>
+                <h3 className="text-2xl font-bold text-blue-800 mb-4">
+                  Get in Touch
+                </h3>
                 <p className="text-gray-600">
-                  Reach out to us for personalized assistance and travel planning support.
+                  Reach out to us for personalized assistance and travel
+                  planning support.
                 </p>
               </div>
               <div className="space-y-6">
@@ -114,7 +118,7 @@ export default function Contact() {
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224345.83924060495!2d77.06889739999999!3d28.527582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b63c5b9cf%3A0x8f4d345f1e7b0d!2sNew%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1694599999999!5m2!1sen!2sin"
                   width="100%"
                   height="100%"
-                  style={{ border: '0' }}
+                  style={{ border: "0" }}
                   allowFullScreen
                   loading="lazy"
                 ></iframe>

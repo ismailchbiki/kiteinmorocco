@@ -1,35 +1,39 @@
-import React, { useEffect, useState } from 'react'
-import { FaGlobeAmericas, FaHotel, FaShieldAlt, FaDollarSign } from "react-icons/fa";
+import React, { useEffect, useState } from "react";
+import {
+  FaGlobeAmericas,
+  FaHotel,
+  FaShieldAlt,
+  FaDollarSign,
+} from "react-icons/fa";
 import AOS from "aos";
-import 'aos/dist/aos.css';
+import "aos/dist/aos.css";
 
 export default function About() {
-
   const [stats, setStats] = useState({
     destinations: 0,
     hotels: 0,
     travelers: 0,
-    experience: 0
+    experience: 0,
   });
 
   useEffect(() => {
-    AOS.init({duration:1000, once: true});
+    AOS.init({ duration: 1000, once: true });
 
     const handleScroll = () => {
-      const section = document.getElementById('stats');
+      const section = document.getElementById("stats");
       const rect = section.getBoundingClientRect();
 
-      if(rect.top < window.innerHeight && rect.bottom >= 0){
-        let i =0 ;
+      if (rect.top < window.innerHeight && rect.bottom >= 0) {
+        let i = 0;
         const interval = setInterval(() => {
           i++;
           setStats({
             destinations: Math.min(i, 50),
             hotels: Math.min(i * 4, 200),
             travelers: Math.min(i * 200, 10000),
-            experience: Math.min(i / 10, 5)
+            experience: Math.min(i / 10, 5),
           });
-          if(i >= 50) clearInterval(interval);
+          if (i >= 50) clearInterval(interval);
         }, 50);
         window.removeEventListener("scroll", handleScroll);
       }
@@ -40,125 +44,158 @@ export default function About() {
   }, []);
 
   return (
-    <section className='about-section py-16 bg-gray-50' id='about'>
-        <div className='max-w-6xl mx-auto px-6 lg:px-12 grid lg:grid-cols-2 gap-12 items-center'>
-            <div data-aos="fade-right">
-              <h2 className='text-4xl font-extrabold text-blue-900 mb-6'>
-                About Us
-              </h2>
-              <p className='text-gray-700 leading-relaxed mb-4'>
-                At <span className='font-semibold text-blue-800'>Travel Explorer</span>,
-                we help adventurers discover destination worldwide. From Tropical Beaches
-                to Mountain Peaks, we make travel planning seamless and memorable.
-              </p>
-              <p className='text-gray-700 leading-relaxed mb-4'>
-                Our mission is to inspire and connect people through unique travel experiences, while
-                ensuring comfort,safety and unforgettable moments.
-              </p>
-              <p className='text-gray-700 leading-relaxed'>
-                Whether you're planning a quick gateway or a month-long adventure, we've got the
-                perfect packages tailored just for you.
-              </p>
-            </div>
-            <div className='flex- justify-center' data-aos="fade-left">
-                <img 
-                  src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1000&q=80" 
-                  alt="Travel Explorer"
-                  className='rounded-2xl shadow-lg w-full max-w-md lg:max-w-full transform hover:scale-105 transition-transform duration-500' 
-                />
-            </div>
+    <section className="about-section py-16 bg-gray-50" id="about">
+      <div className="max-w-6xl mx-auto px-6 lg:px-12 grid lg:grid-cols-2 gap-12 items-center">
+        <div data-aos="fade-right">
+          <h2 className="text-4xl font-extrabold text-blue-900 mb-6">
+            About Us
+          </h2>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            At{" "}
+            <span className="font-semibold text-blue-800">Travel Explorer</span>
+            , we help adventurers discover destination worldwide. From Tropical
+            Beaches to Mountain Peaks, we make travel planning seamless and
+            memorable.
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            Our mission is to inspire and connect people through unique travel
+            experiences, while ensuring comfort,safety and unforgettable
+            moments.
+          </p>
+          <p className="text-gray-700 leading-relaxed">
+            Whether you're planning a quick gateway or a month-long adventure,
+            we've got the perfect packages tailored just for you.
+          </p>
         </div>
-        {/* Feature Section */}
-        <div className='max-w-6xl mx-auto px-6 lg:px-12 mt-16 grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-center'>
-          <div data-aos="fade-up" className='p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition'>
-            <FaGlobeAmericas className='text-blue-600 text-4xl mb-4 mx-auto'/>
-            <h3 className='font-bold text-lg mb-2'>Worldwide Destinations</h3>
-            <p className='text-gray-600 text-sm'>Explore diverse locations across the globe with ease.</p>
-          </div>
-          <div data-aos='fade-up' data-aos-delay='200' className='p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition'>
-            <FaHotel className='text-blue-600 text-4xl mb-4 mx-auto'/>
-            <h3 className='font-bold text-lg mb-2'>Best Stays</h3>
-            <p className='text-gray-600 text-sm'>Handpicked hotels and stays for comfort and luxury.</p>
-          </div>
-          <div data-aos='fade-up' data-aos-delay='200' className='p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition'>
-            <FaShieldAlt className='text-blue-600 text-4xl mb-4 mx-auto'/>
-            <h3 className='font-bold text-lg mb-2'>Safe & Secure</h3>
-            <p className='text-gray-600 text-sm'>Travel with peace of mind, knowing you're protected.</p>
-          </div>
-          <div data-aos='fade-up' data-aos-delay='200' className='p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition'>
-            <FaDollarSign className='text-blue-600 text-4xl mb-4 mx-auto'/>
-            <h3 className='font-bold text-lg mb-2'>Affordable Packages</h3>
-            <p className='text-gray-600 text-sm'>Enjoy premium experiences at budget-friendly prices.</p>
-          </div>
+        <div className="flex- justify-center" data-aos="fade-left">
+          <img
+            src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1000&q=80"
+            alt="Travel Explorer"
+            className="rounded-2xl shadow-lg w-full max-w-md lg:max-w-full transform hover:scale-105 transition-transform duration-500"
+          />
         </div>
-
-        {/* Animated Stat Section */}
-
-        <div id='stats' className='bg-blue-900 text-white mt-20 py-12'>
-          <div className='max-w-6xl mx-auto px-6 grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-center'>
-            <div>
-              <h3 className='text-3xl font-extrabold'>{stats.destinations.toFixed(0)}+</h3>
-              <p className='text-gray-300'>Destinations</p>
-            </div>
-            <div>
-              <h3 className='text-3xl font-extrabold'>{stats.hotels.toFixed(0)}+</h3>
-              <p className='text-gray-300'>Hotels & Resorts</p>
-            </div>
-            <div>
-              <h3 className='text-3xl font-extrabold'>{stats.travelers.toFixed(0)}K+</h3>
-              <p className='text-gray-300'>Happy Travelers</p>
-            </div>
-            <div>
-              <h3 className='text-3xl font-extrabold'>{stats.experience.toFixed(0)}+</h3>
-              <p className='text-gray-300'>Years Experience</p>
-            </div>
-          </div>
+      </div>
+      {/* Feature Section */}
+      <div className="max-w-6xl mx-auto px-6 lg:px-12 mt-16 grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+        <div
+          data-aos="fade-up"
+          className="p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition"
+        >
+          <FaGlobeAmericas className="text-blue-600 text-4xl mb-4 mx-auto" />
+          <h3 className="font-bold text-lg mb-2">Worldwide Destinations</h3>
+          <p className="text-gray-600 text-sm">
+            Explore diverse locations across the globe with ease.
+          </p>
         </div>
+        <div
+          data-aos="fade-up"
+          data-aos-delay="200"
+          className="p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition"
+        >
+          <FaHotel className="text-blue-600 text-4xl mb-4 mx-auto" />
+          <h3 className="font-bold text-lg mb-2">Best Stays</h3>
+          <p className="text-gray-600 text-sm">
+            Handpicked hotels and stays for comfort and luxury.
+          </p>
+        </div>
+        <div
+          data-aos="fade-up"
+          data-aos-delay="200"
+          className="p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition"
+        >
+          <FaShieldAlt className="text-blue-600 text-4xl mb-4 mx-auto" />
+          <h3 className="font-bold text-lg mb-2">Safe & Secure</h3>
+          <p className="text-gray-600 text-sm">
+            Travel with peace of mind, knowing you're protected.
+          </p>
+        </div>
+        <div
+          data-aos="fade-up"
+          data-aos-delay="200"
+          className="p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition"
+        >
+          <FaDollarSign className="text-blue-600 text-4xl mb-4 mx-auto" />
+          <h3 className="font-bold text-lg mb-2">Affordable Packages</h3>
+          <p className="text-gray-600 text-sm">
+            Enjoy premium experiences at budget-friendly prices.
+          </p>
+        </div>
+      </div>
 
-        {/* Team Section */}
+      {/* Animated Stat Section */}
 
-        <div className="text-center mt-16 px-6">
-          <h3 className="text-2xl font-bold text-blue-900 mb-8">Meet Our Team</h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
-              <img 
-                src="https://randomuser.me/api/portraits/women/44.jpg" 
-                alt="Team Member" 
-                className="w-24 h-24 mx-auto rounded-full mb-4"
-              />
-              <h4 className="font-semibold">Sarah Johnson</h4>
-              <p className="text-sm text-gray-600">Travel Consultant</p>
-            </div>
-            <div className="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
-              <img 
-                src="https://randomuser.me/api/portraits/men/32.jpg" 
-                alt="Team Member" 
-                className="w-24 h-24 mx-auto rounded-full mb-4"
-              />
-              <h4 className="font-semibold">David Lee</h4>
-              <p className="text-sm text-gray-600">Tour Guide</p>
-            </div>
-            <div className="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
-              <img 
-                src="https://randomuser.me/api/portraits/women/68.jpg" 
-                alt="Team Member" 
-                className="w-24 h-24 mx-auto rounded-full mb-4"
-              />
-              <h4 className="font-semibold">Emily Carter</h4>
-              <p className="text-sm text-gray-600">Booking Specialist</p>
-            </div>
-            <div className="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
-              <img 
-                src="https://randomuser.me/api/portraits/men/76.jpg" 
-                alt="Team Member" 
-                className="w-24 h-24 mx-auto rounded-full mb-4"
-              />
-              <h4 className="font-semibold">Michael Brown</h4>
-              <p className="text-sm text-gray-600">Travel Expert</p>
-            </div>
+      <div id="stats" className="bg-blue-900 text-white mt-20 py-12">
+        <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+          <div>
+            <h3 className="text-3xl font-extrabold">
+              {stats.destinations.toFixed(0)}+
+            </h3>
+            <p className="text-gray-300">Destinations</p>
+          </div>
+          <div>
+            <h3 className="text-3xl font-extrabold">
+              {stats.hotels.toFixed(0)}+
+            </h3>
+            <p className="text-gray-300">Hotels & Resorts</p>
+          </div>
+          <div>
+            <h3 className="text-3xl font-extrabold">
+              {stats.travelers.toFixed(0)}K+
+            </h3>
+            <p className="text-gray-300">Happy Travelers</p>
+          </div>
+          <div>
+            <h3 className="text-3xl font-extrabold">
+              {stats.experience.toFixed(0)}+
+            </h3>
+            <p className="text-gray-300">Years Experience</p>
           </div>
         </div>
+      </div>
 
+      {/* Team Section */}
+
+      <div className="text-center mt-16 px-6">
+        <h3 className="text-2xl font-bold text-blue-900 mb-8">Meet Our Team</h3>
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+            <img
+              src="https://randomuser.me/api/portraits/women/44.jpg"
+              alt="Team Member"
+              className="w-24 h-24 mx-auto rounded-full mb-4"
+            />
+            <h4 className="font-semibold">Sarah Johnson</h4>
+            <p className="text-sm text-gray-600">Travel Consultant</p>
+          </div>
+          <div className="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+            <img
+              src="https://randomuser.me/api/portraits/men/32.jpg"
+              alt="Team Member"
+              className="w-24 h-24 mx-auto rounded-full mb-4"
+            />
+            <h4 className="font-semibold">David Lee</h4>
+            <p className="text-sm text-gray-600">Tour Guide</p>
+          </div>
+          <div className="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+            <img
+              src="https://randomuser.me/api/portraits/women/68.jpg"
+              alt="Team Member"
+              className="w-24 h-24 mx-auto rounded-full mb-4"
+            />
+            <h4 className="font-semibold">Emily Carter</h4>
+            <p className="text-sm text-gray-600">Booking Specialist</p>
+          </div>
+          <div className="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+            <img
+              src="https://randomuser.me/api/portraits/men/76.jpg"
+              alt="Team Member"
+              className="w-24 h-24 mx-auto rounded-full mb-4"
+            />
+            <h4 className="font-semibold">Michael Brown</h4>
+            <p className="text-sm text-gray-600">Travel Expert</p>
+          </div>
+        </div>
+      </div>
     </section>
   );
 }
