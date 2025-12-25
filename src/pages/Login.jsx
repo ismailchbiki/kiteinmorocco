@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import '../styles/login.css';
+import "../styles/login.css";
 import { auth, signInWithGoogle } from "../firebase";
 import {
   signInWithEmailAndPassword,
@@ -7,7 +7,15 @@ import {
   signOut,
 } from "firebase/auth";
 
-import {TextField, Button, Snackbar, Alert, Typography, Box, Divider} from "@mui/material";
+import {
+  TextField,
+  Button,
+  Snackbar,
+  Alert,
+  Typography,
+  Box,
+  Divider,
+} from "@mui/material";
 import { useNavigate } from "react-router-dom";
 
 export default function Login() {
@@ -20,7 +28,7 @@ export default function Login() {
 
   const navigate = useNavigate();
 
-  const showAlert = (msg, type = 'success') => {
+  const showAlert = (msg, type = "success") => {
     setMessage(msg);
     setSeverity(type);
     setOpen(true);
@@ -28,7 +36,7 @@ export default function Login() {
 
   const handleClose = () => {
     setOpen(false);
-  }
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -66,7 +74,7 @@ export default function Login() {
   };
 
   return (
-    <Box className="login-container" data-aos='fade-up'>
+    <Box className="login-container" data-aos="fade-up">
       <Typography variant="h5" gutterBottom color="primary">
         {isRegister ? "Create Account" : "Login"}
       </Typography>
@@ -96,7 +104,7 @@ export default function Login() {
         </Button>
       </form>
 
-      <Divider sx={{my:"2"}}>OR</Divider>
+      <Divider sx={{ my: "2" }}>OR</Divider>
 
       <Button
         variant="outlined"
@@ -108,20 +116,20 @@ export default function Login() {
       </Button>
 
       <Box mt={2}>
-        <Button 
-          variant="text" 
-          color="secondary" 
-          onClick={() => setIsRegister(!isRegister)} 
+        <Button
+          variant="text"
+          color="secondary"
+          onClick={() => setIsRegister(!isRegister)}
           fullWidth
         >
           {isRegister ? "Already have an account? Login" : "New user? Register"}
         </Button>
-        <Button 
-          variant="outlined" 
-          color="error" 
-          onClick={handleLogout} 
+        <Button
+          variant="outlined"
+          color="error"
+          onClick={handleLogout}
           fullWidth
-          sx={{mt: 1}}
+          sx={{ mt: 1 }}
         >
           Logout
         </Button>
@@ -131,13 +139,9 @@ export default function Login() {
         open={open}
         autoHideDuration={4000}
         onClose={handleClose}
-        anchorOrigin={{vertical:"top", horizontal:"center"}}
+        anchorOrigin={{ vertical: "top", horizontal: "center" }}
       >
-        <Alert
-          onClose={handleClose}
-          severity={severity}
-          sx={{width:"100%"}}
-        >
+        <Alert onClose={handleClose} severity={severity} sx={{ width: "100%" }}>
           {message}
         </Alert>
       </Snackbar>

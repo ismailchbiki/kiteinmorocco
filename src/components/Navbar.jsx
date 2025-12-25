@@ -3,7 +3,7 @@ import { FiMenu, FiX } from "react-icons/fi";
 import { NavLink, useNavigate } from "react-router-dom";
 import TravelExploreIcon from "@mui/icons-material/TravelExplore";
 import { getAuth, onAuthStateChanged, signOut } from "firebase/auth";
-import '../styles/Navbar.css';
+import "../styles/Navbar.css";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -45,7 +45,8 @@ export default function Navbar() {
       <div className="navbar-container">
         {/* Logo */}
         <NavLink to="/home" className="logo">
-          <TravelExploreIcon fontSize="large" className="mr-2" /> Travel Explorer
+          <TravelExploreIcon fontSize="large" className="mr-2" /> Travel
+          Explorer
         </NavLink>
 
         {/* Desktop Menu */}
@@ -126,8 +127,7 @@ export default function Navbar() {
       </div>
 
       {/* Mobile Menu */}
-      <div
-        className={`mobile-menu ${open ? "show" : ""}`}>
+      <div className={`mobile-menu ${open ? "show" : ""}`}>
         <ul>
           {menuItems.map((item) => (
             <li key={item.name}>
@@ -194,10 +194,7 @@ export default function Navbar() {
                 {profileDropdown && (
                   <ul className="profile-menu">
                     <li>
-                      <NavLink
-                        to="/my-bookings"
-                        onClick={() => setOpen(false)}
-                      >
+                      <NavLink to="/my-bookings" onClick={() => setOpen(false)}>
                         My Bookings
                       </NavLink>
                     </li>

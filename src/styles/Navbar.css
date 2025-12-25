@@ -7,7 +7,7 @@
   top: 0;
   width: 100%;
   z-index: 1000;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .navbar-container {
@@ -20,7 +20,7 @@
 
 /* Logo */
 .logo {
-  font-size: 1.4rem;   /* smaller text */
+  font-size: 1.4rem; /* smaller text */
   font-weight: bold;
   display: flex;
   align-items: center;
@@ -80,7 +80,7 @@
   background: white;
   color: black;
   border-radius: 6px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
   min-width: 150px;
   padding: 0.4rem 0;
   animation: fadeIn 0.4s ease;
@@ -107,14 +107,29 @@
   font-size: 0.9rem;
 }
 
-.btn-green { background: #4caf50; color: white; }
-.btn-green:hover { background: #388e3c; }
+.btn-green {
+  background: #4caf50;
+  color: white;
+}
+.btn-green:hover {
+  background: #388e3c;
+}
 
-.btn-red { background: #f44336; color: white; }
-.btn-red:hover { background: #d32f2f; }
+.btn-red {
+  background: #f44336;
+  color: white;
+}
+.btn-red:hover {
+  background: #d32f2f;
+}
 
-.btn-yellow { background: #ffeb3b; color: black; }
-.btn-yellow:hover { background: #fbc02d; }
+.btn-yellow {
+  background: #ffeb3b;
+  color: black;
+}
+.btn-yellow:hover {
+  background: #fbc02d;
+}
 
 /* Hamburger */
 .hamburger {
@@ -194,42 +209,42 @@
   background: #0d47a1;
 }
 
-.profile-dropdown{
+.profile-dropdown {
   position: relative;
 }
 
-.profile-btn{
+.profile-btn {
   background: none;
   border: none;
   cursor: pointer;
   padding: 0;
 }
 
-.profile-img{
+.profile-img {
   width: 36px;
   height: 36px;
   border-radius: 50%;
   border: 2px solid white;
 }
 
-.profile-menu{
+.profile-menu {
   position: relative;
   right: 0;
   top: 45px;
   background: white;
   color: black;
   border-radius: 6px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   min-width: 160px;
   animation: fadeIn 0.3s ease;
   z-index: 999;
 }
 
-.profile-menu li{
+.profile-menu li {
   list-style: none;
 }
-.profile-menu a, 
-.profile-menu button{
+.profile-menu a,
+.profile-menu button {
   display: block;
   width: 100%;
   padding: 0.6rem 1rem;
@@ -242,16 +257,20 @@
 }
 
 .profile-menu a:hover,
-.profile-menu button:hover{
+.profile-menu button:hover {
   background: #e3f2fd;
 }
-.logout-btn{
+.logout-btn {
   color: #f44336;
   font-weight: 600;
 }
 /* Responsive */
 @media (max-width: 992px) {
   /* switch earlier at 992px for smoother look */
-  .desktop-menu { display: none; }
-  .hamburger { display: block; }
+  .desktop-menu {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
 }

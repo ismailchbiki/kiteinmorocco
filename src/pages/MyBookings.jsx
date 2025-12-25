@@ -20,7 +20,7 @@ export default function MyBookings() {
   const persist = (next) => {
     localStorage.setItem("bookings", JSON.stringify(next));
     setBookings(next);
-  }
+  };
 
   const handleClearBookings = () => {
     localStorage.removeItem("bookings");
@@ -63,7 +63,12 @@ export default function MyBookings() {
 
     // date fallbacks
     const date =
-      b.date || b.travelDate || b.bookingDate || b.tripDate || b.createdAt || "N/A";
+      b.date ||
+      b.travelDate ||
+      b.bookingDate ||
+      b.tripDate ||
+      b.createdAt ||
+      "N/A";
 
     // optional extra info
     const name = b.name || b.fullName || b.customer || "—";
@@ -141,9 +146,7 @@ export default function MyBookings() {
                           size="small"
                           variant="contained"
                           color="error"
-                          onClick={() =>
-                            handleRemoveBooking(b.id ?? index)
-                          }
+                          onClick={() => handleRemoveBooking(b.id ?? index)}
                         >
                           Cancel
                         </Button>
@@ -167,7 +170,11 @@ export default function MyBookings() {
           </Grid>
 
           <Box textAlign="center" mt={4}>
-            <Button variant="contained" color="error" onClick={handleClearBookings}>
+            <Button
+              variant="contained"
+              color="error"
+              onClick={handleClearBookings}
+            >
               Clear All Bookings
             </Button>
           </Box>

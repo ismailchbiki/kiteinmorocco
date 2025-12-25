@@ -1,26 +1,30 @@
-import React from 'react'
-import { Link } from 'react-router-dom';
-import { useState, useEffect } from 'react'; 
-import StarOutlineSharpIcon from '@mui/icons-material/StarOutlineSharp';
+import React from "react";
+import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
+import StarOutlineSharpIcon from "@mui/icons-material/StarOutlineSharp";
 
 export default function PackagesPage() {
+  const [packages, setPackages] = useState([]);
+  const [searchTerm, setSearchTerm] = useState("");
+  const [filterRating, setFilterRating] = useState("all");
 
-    const [packages, setPackages] = useState([]);
-    const [searchTerm, setSearchTerm] = useState("");
-    const [filterRating, setFilterRating] = useState("all");
+  useEffect(() => {
+    fetch("/data/packages.json")
+      .then((res) => res.json())
+      .then((data) => setPackages(data))
+      .catch((err) => console.error("Failed to load packages:", err));
+  }, []);
 
-    useEffect(() => {
-        fetch("/data/packages.json")
-        .then((res) => res.json())
-        .then((data) => setPackages(data))
-        .catch((err) => console.error("Failed to load packages:", err));
-      }, []);
-
-    const filteredPackages = packages.filter((pkg) => {
-      const matchesSearch = pkg.name.toLowerCase().includes(searchTerm.toLowerCase());
-      const matchesRating = filterRating === "all" ? true : Math.floor(pkg.rating) >= parseInt(filterRating);
-      return matchesSearch && matchesRating;
-    });
+  const filteredPackages = packages.filter((pkg) => {
+    const matchesSearch = pkg.name
+      .toLowerCase()
+      .includes(searchTerm.toLowerCase());
+    const matchesRating =
+      filterRating === "all"
+        ? true
+        : Math.floor(pkg.rating) >= parseInt(filterRating);
+    return matchesSearch && matchesRating;
+  });
 
   return (
     <section className="py-16 bg-gray-50">
@@ -73,7 +77,9 @@ export default function PackagesPage() {
                 />
                 <div className="p-4 flex flex-1 flex-col justify-between">
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-800">{pkg.name}</h3>
+                    <h3 className="text-lg font-semibold text-gray-800">
+                      {pkg.name}
+                    </h3>
                     <p className="text-gray-600 text-sm">{pkg.duration}</p>
                     <p className="text-green-600 font-bold mt-1">{pkg.price}</p>
                   </div>
@@ -83,7 +89,7 @@ export default function PackagesPage() {
 
                   <Link
                     to={`/book/${pkg.id}`}
-                    className='mt-4 inline-block px-4 py-2 bg-blue-600 text-white text-center rounded-lg hover:bg-blue-700 transition'
+                    className="mt-4 inline-block px-4 py-2 bg-blue-600 text-white text-center rounded-lg hover:bg-blue-700 transition"
                   >
                     Book Now
                   </Link>

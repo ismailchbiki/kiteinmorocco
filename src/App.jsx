@@ -1,47 +1,53 @@
-import './App.css'
+import "./App.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from 'react';
-import { Routes, Route } from 'react-router-dom'
-import Home from './pages/Home'
-import Explore from './pages/Explore'
-import About from './pages/About'
-import Contact from './pages/Contact'
-import Navbar from './components/Navbar'
-import Footer from './components/Footer'
-import DestinationDetails from './components/DestinationDetails';
-import BookingPage from './components/BookingPage';
-import Login from './pages/Login';
-import ProtectedRoutes from './components/ProtectedRoutes';
-import MyBookings from './pages/MyBookings';
-import DestinationsPage from './pages/DestinationsPage';
-import PackagesPage from './pages/PackagesPage';
-
+import { useEffect } from "react";
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Explore from "./pages/Explore";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import DestinationDetails from "./components/DestinationDetails";
+import BookingPage from "./components/BookingPage";
+import Login from "./pages/Login";
+import ProtectedRoutes from "./components/ProtectedRoutes";
+import MyBookings from "./pages/MyBookings";
+import DestinationsPage from "./pages/DestinationsPage";
+import PackagesPage from "./pages/PackagesPage";
 
 function App() {
   useEffect(() => {
-    AOS.init({duration: 1000, once: true})
-  })
+    AOS.init({ duration: 1000, once: true });
+  });
   return (
     <>
-    <Navbar/>
+      <Navbar />
       <Routes>
         {/* Default route */}
-        <Route path='/' element={<Home />} />
-        <Route path='/home' element={<Home/>} />
-        <Route path='/explore' element={<Explore/>} />
-        <Route path='/about' element={<About/>} />
-        <Route path='/contact' element={<Contact/>} />
-        <Route path='/destinations/:id' element={<DestinationDetails/>} />
-        <Route path='/book/:id' element={<BookingPage/>} />   
-        <Route path='/login' element={<Login/>}/>    
-        <Route path='/my-bookings' element={<ProtectedRoutes><MyBookings/></ProtectedRoutes>}/>
-        <Route path='/destinations' element={<DestinationsPage/>}/> 
-        <Route path='/packages' element={<PackagesPage/>}/>
+        <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/explore" element={<Explore />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/destinations/:id" element={<DestinationDetails />} />
+        <Route path="/book/:id" element={<BookingPage />} />
+        <Route path="/login" element={<Login />} />
+        <Route
+          path="/my-bookings"
+          element={
+            <ProtectedRoutes>
+              <MyBookings />
+            </ProtectedRoutes>
+          }
+        />
+        <Route path="/destinations" element={<DestinationsPage />} />
+        <Route path="/packages" element={<PackagesPage />} />
       </Routes>
-    <Footer/>
+      <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
