@@ -2,9 +2,11 @@
     --primary: #1f7a8c;
     --primary-dark: #125b68;
     --primary-soft: #dff5f8;
+    --primary-pale: #edf9fb;
     --secondary: #0f172a;
     --accent: #f4b942;
     --accent-strong: #db9e1f;
+    --accent-soft: #fff2ce;
     --success: #1e9d72;
     --warning: #f5a623;
     --danger: #d14c4c;
@@ -13,6 +15,8 @@
     --line: rgba(15, 23, 42, 0.12);
     --surface: #f8fbfb;
     --surface-alt: #edf7f9;
+    --coast: #eaf6f5;
+    --sand: #f6efe3;
     --white: #ffffff;
     --shadow: 0 18px 45px rgba(16, 33, 45, 0.12);
     --radius-lg: 22px;
@@ -35,10 +39,21 @@ html {
 body {
     margin: 0;
     font-family: var(--body-font);
-    background: var(--white);
+    background:
+        radial-gradient(circle at top left, rgba(31, 122, 140, 0.04), transparent 28%), linear-gradient(180deg, #f8f7f3 0%, var(--white) 12%, var(--white) 100%);
     color: var(--ink);
     line-height: 1.7;
     text-rendering: optimizeLegibility;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background-image: radial-gradient(rgba(15, 23, 42, 0.02) 0.8px, transparent 0.8px);
+    background-size: 12px 12px;
+    opacity: 0.45;
 }
 
 img {
@@ -86,7 +101,30 @@ main {
 }
 
 .section-bg {
-    background: var(--surface);
+    background: radial-gradient(circle at top left, rgba(31, 122, 140, 0.05), transparent 24%), linear-gradient(180deg, var(--surface) 0%, var(--coast) 100%);
+}
+
+.section-wave {
+    position: relative;
+    height: 34px;
+    overflow: hidden;
+    background: transparent;
+}
+
+.section-wave::before {
+    content: "";
+    position: absolute;
+    left: -2%;
+    width: 104%;
+    height: 44px;
+    top: -10px;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 80' preserveAspectRatio='none'%3E%3Cpath d='M0,40 C150,75 180,5 300,40 S510,80 600,40 S850,5 1000,40 S1125,78 1200,40 L1200,80 L0,80 Z' fill='%23ffffff'/%3E%3C/svg%3E")
+        repeat-x center top / 100% 100%;
+}
+
+.wave-soft::before {
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 80' preserveAspectRatio='none'%3E%3Cpath d='M0,40 C150,75 180,5 300,40 S510,80 600,40 S850,5 1000,40 S1125,78 1200,40 L1200,80 L0,80 Z' fill='%23f8fbfb'/%3E%3C/svg%3E")
+        repeat-x center top / 100% 100%;
 }
 
 .eyebrow {
@@ -280,6 +318,25 @@ button {
         linear-gradient(135deg, rgba(15, 23, 42, 0.86), rgba(17, 91, 105, 0.8)),
         url("images/hero-kite.jpg") center/cover no-repeat;
     color: var(--white);
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    inset: auto -8% -30% auto;
+    width: 340px;
+    height: 340px;
+    border-radius: 50%;
+    background: rgba(244, 185, 66, 0.12);
+    filter: blur(16px);
+}
+
+.hero-section::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(10, 35, 45, 0.18));
 }
 
 .hero-section .container {
@@ -385,6 +442,20 @@ button {
     border: 1px solid var(--line);
     border-radius: var(--radius-md);
     box-shadow: 0 8px 30px rgba(16, 33, 45, 0.04);
+    position: relative;
+    overflow: hidden;
+}
+
+.feature-block::before,
+.package-card::before,
+.activity-card::before,
+.testimonial::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary), var(--accent));
+    opacity: 0.9;
 }
 
 .feature-grid,
