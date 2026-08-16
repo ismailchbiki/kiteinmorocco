@@ -759,6 +759,105 @@ textarea.form-control {
     color: var(--primary-dark);
 }
 
+/* Highlight box for combo packages */
+.highlight-box {
+    text-align: center;
+    background: rgba(31, 122, 140, 0.1);
+    padding: 2rem;
+    border-radius: var(--radius-sm);
+    border: 1px solid rgba(31, 122, 140, 0.2);
+    margin-bottom: 2rem;
+}
+
+.highlight-box h4 {
+    margin-bottom: 1rem;
+    color: var(--secondary);
+}
+
+.highlight-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+    text-align: left;
+    display: inline-block;
+}
+
+.highlight-box li {
+    padding: 0.5rem 0;
+    color: var(--ink);
+}
+
+.highlight-box .btn {
+    margin-top: 1rem;
+}
+
+/* Package card button spacing */
+.package-card .btn {
+    margin-top: 1rem;
+}
+
+/* Equipment benefits list */
+.equipment-benefits {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.equipment-benefits li {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 0;
+    color: var(--ink);
+}
+
+.equipment-benefits i {
+    color: var(--primary-dark);
+    flex-shrink: 0;
+}
+
+/* Utility classes */
+.text-center {
+    text-align: center;
+}
+
+.margin-top-1 {
+    margin-top: 1rem;
+}
+
+.margin-bottom-2 {
+    margin-bottom: 2rem;
+}
+
+.margin-top-auto {
+    margin-top: auto;
+}
+
+.margin-left-auto {
+    margin-left: auto;
+}
+
+.margin-right-auto {
+    margin-right: auto;
+}
+
+.max-width-600 {
+    max-width: 600px;
+}
+
+.max-width-700 {
+    max-width: 700px;
+}
+
+.max-width-900 {
+    max-width: 900px;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 @media (max-width: 1040px) {
     .feature-grid,
     .activity-grid,
