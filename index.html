@@ -365,13 +365,35 @@
                                 <label class="form-label" for="email">Email address</label>
                                 <input class="form-control" id="email" name="email" type="email" required />
                             </div>
+                            <div class="form-group form-group-half">
+                                <label class="form-label" for="phone">Phone number</label>
+                                <input class="form-control" id="phone" name="phone" type="tel" />
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="package">Interested package</label>
+                                <select class="form-control" id="package" name="package">
+                                    <option value="">Select a package (optional)</option>
+                                    <option value="beginner-kite">Beginner Kitesurfing - $450 (3 days)</option>
+                                    <option value="intermediate-kite">Intermediate Kitesurfing - $750 (5 days)</option>
+                                    <option value="private-kite">Private Kitesurfing Intensive - $250/day</option>
+                                    <option value="beginner-wind">Beginner Windsurfing - $380 (3 days)</option>
+                                    <option value="intermediate-wind">Intermediate Windsurfing - $650 (5 days)</option>
+                                    <option value="private-wind">Private Windsurfing Coaching - $200/day</option>
+                                    <option value="beginner-surf">Beginner Surfing - $200 (3 days)</option>
+                                    <option value="intermediate-surf">Intermediate Surfing - $400 (5 days)</option>
+                                    <option value="private-surf">Private Surfing Coaching - $180/session</option>
+                                    <option value="combo-start">Start Your Adventure (Combo) - $699 (3 days + 3 nights)</option>
+                                    <option value="combo-extended">Extended Weekend (Combo) - $1,199 (5 days + 5 nights)</option>
+                                    <option value="combo-full">Full Experience Week (Combo) - $1,999 (7 days + 7 nights)</option>
+                                </select>
+                            </div>
                             <div class="form-group">
                                 <label class="form-label" for="message">How can we help?</label>
                                 <textarea
                                     class="form-control"
                                     id="message"
                                     name="message"
-                                    placeholder="Tell us your experience level, dates, and preferred sport."
+                                    placeholder="Tell us your experience level, dates, and any other preferences."
                                 ></textarea>
                             </div>
                             <button type="submit" class="btn btn-primary">Send inquiry</button>
