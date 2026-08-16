@@ -3,46 +3,29 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-
-        <title>Kite in Morocco - Best kitesurf school in the region</title>
-
-        <!-- CSS FILES -->
+        <meta
+            name="description"
+            content="Kite in Morocco offers beginner to advanced kitesurfing, windsurfing, and surfing lessons in Essaouira with certified instructors and premium gear."
+        />
+        <meta name="theme-color" content="#1f7a8c" />
+        <meta name="author" content="Kite in Morocco" />
+        <title>Kite in Morocco | Kitesurfing School in Essaouira</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet" />
-
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
         <link href="css/bootstrap.min.css" rel="stylesheet" />
         <link href="css/bootstrap-icons.css" rel="stylesheet" />
         <link href="css/templatemo-tiya-golf-club.css" rel="stylesheet" />
     </head>
 
     <body>
-        <main>
-            <!-- Navigation bar -->
-
-            <nav class="navbar navbar-expand-lg">
+        <header class="site-header">
+            <nav class="navbar navbar-expand-lg" aria-label="Main navigation">
                 <div class="container">
-                    <a class="navbar-brand d-flex align-items-center" href="index.html">
-                        <img src="images/logo.jpg" class="navbar-brand-image img-fluid" alt="Tiya Golf Club" />
-                        <span class="navbar-brand-text">
-                            Kite
-                            <small>in Morocco</small>
-                        </span>
+                    <a class="navbar-brand" href="#home" aria-label="Kite in Morocco home">
+                        <img src="images/logo.jpg" class="navbar-brand-image" alt="Kite in Morocco logo" />
+                        <span class="navbar-brand-text">Kite <small>in Morocco</small></span>
                     </a>
-
-                    <div class="d-lg-none ms-auto me-3">
-                        <a
-                            class="btn custom-btn custom-border-btn"
-                            data-bs-toggle="offcanvas"
-                            href="#offcanvasExample"
-                            role="button"
-                            aria-controls="offcanvasExample"
-                            >Member Login</a
-                        >
-                    </div>
 
                     <button
                         class="navbar-toggler"
@@ -58,1088 +41,408 @@
 
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ms-lg-auto">
-                            <li class="nav-item">
-                                <a class="nav-link click-scroll" href="#section_1">Home</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link click-scroll" href="#section_explore">Activities</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link click-scroll" href="#section_4">Packages</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link click-scroll" href="#section_5">Contact Us</a>
-                            </li>
-
+                            <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#activities">Activities</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#packages">Packages</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                             <li class="nav-item dropdown">
-                                <a
-                                    class="nav-link dropdown-toggle"
-                                    href="#"
-                                    id="navbarLightDropdownMenuLink"
-                                    role="button"
-                                    data-bs-toggle="dropdown"
-                                    aria-expanded="false"
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarExplore" role="button" data-bs-toggle="dropdown" aria-expanded="false"
                                     >Explore</a
                                 >
-
-                                <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-                                    <li>
-                                        <a class="dropdown-item" href="kitesurfing.html">Kitesurfing</a>
-                                    </li>
-
-                                    <li>
-                                        <a class="dropdown-item" href="windsurfing.html">Windsurfing</a>
-                                    </li>
-
-                                    <li>
-                                        <a class="dropdown-item" href="surfing.html">Surfing</a>
-                                    </li>
-
-                                    <li>
-                                        <a class="dropdown-item" href="equipment-rental.html">Equipment Rental</a>
-                                    </li>
-
-                                    <li>
-                                        <a class="dropdown-item" href="accommodation.html">Accommodation</a>
-                                    </li>
+                                <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarExplore">
+                                    <li><a class="dropdown-item" href="kitesurfing.html">Kitesurfing</a></li>
+                                    <li><a class="dropdown-item" href="windsurfing.html">Windsurfing</a></li>
+                                    <li><a class="dropdown-item" href="surfing.html">Surfing</a></li>
+                                    <li><a class="dropdown-item" href="equipment-rental.html">Equipment Rental</a></li>
+                                    <li><a class="dropdown-item" href="accommodation.html">Accommodation</a></li>
                                 </ul>
                             </li>
                         </ul>
-
                         <div class="d-none d-lg-block ms-lg-3">
-                            <a
-                                class="btn custom-btn custom-border-btn"
-                                data-bs-toggle="offcanvas"
-                                href="#offcanvasExample"
-                                role="button"
-                                aria-controls="offcanvasExample"
-                                >Member Login</a
-                            >
+                            <a class="btn btn-primary" href="#contact">Book a lesson</a>
                         </div>
                     </div>
                 </div>
             </nav>
+        </header>
 
-            <!-- Banner -->
-
-            <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Member Login</h5>
-
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-
-                <div class="offcanvas-body d-flex flex-column">
-                    <form class="custom-form member-login-form" action="#" method="post" role="form">
-                        <div class="member-login-form-body">
-                            <div class="mb-4">
-                                <label class="form-label mb-2" for="member-login-number">Membership No.</label>
-
-                                <input type="text" name="member-login-number" id="member-login-number" class="form-control" placeholder="11002560" required />
+        <main id="home">
+            <section class="hero-section">
+                <div class="container">
+                    <div class="row align-items-center g-5">
+                        <div class="col-lg-6 col-12">
+                            <p class="eyebrow">Official kite school in Essaouira</p>
+                            <h1>Learn to kite in Morocco with expert instructors.</h1>
+                            <p class="lead">
+                                From your first lesson to confident riding, we teach safe, progressive, and unforgettable water sports experiences on Morocco’s
+                                Atlantic coast.
+                            </p>
+                            <div class="hero-actions">
+                                <a href="#packages" class="btn btn-primary">Book a lesson</a>
+                                <a href="#activities" class="btn btn-secondary">Explore activities</a>
                             </div>
+                            <ul class="hero-points" aria-label="Welcome benefits">
+                                <li>Certified instructors</li>
+                                <li>Premium equipment</li>
+                                <li>Beginner friendly</li>
+                            </ul>
+                        </div>
 
-                            <div class="mb-4">
-                                <label class="form-label mb-2" for="member-login-password">Password</label>
+                        <div class="col-lg-6 col-12">
+                            <div class="hero-media">
+                                <div class="video-frame">
+                                    <iframe
+                                        src="https://www.youtube.com/embed/M0pqy2xgjFE?si=MeFIt_OR33b0b-fy"
+                                        title="Kite in Morocco video tour"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin"
+                                        allowfullscreen
+                                    ></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-                                <input
-                                    type="password"
-                                    name="member-login-password"
-                                    id="member-login-password"
-                                    pattern="[0-9a-zA-Z]{4,10}"
+            <section class="section-padding" id="about">
+                <div class="container">
+                    <div class="row align-items-center g-5">
+                        <div class="col-lg-6 col-12">
+                            <p class="eyebrow">Why choose us</p>
+                            <h2>Trusted by beginners and adventure travelers.</h2>
+                            <p>
+                                Since 2008, Kite in Morocco has helped students safely learn and improve in one of the world’s most exciting coastal training
+                                grounds.
+                            </p>
+                            <p>We combine local insight, professional coaching, and a welcoming environment so every guest can progress with confidence.</p>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <img
+                                src="images/kite-in-morocco.png"
+                                alt="Kite in Morocco team and spot"
+                                class="img-fluid rounded"
+                                style="width: 100%; border-radius: 22px"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-bg section-padding" id="benefits">
+                <div class="container">
+                    <div class="section-heading">
+                        <p class="eyebrow">The Kite in Morocco advantage</p>
+                        <h2>Everything you need to enjoy the sport.</h2>
+                    </div>
+
+                    <div class="feature-grid">
+                        <div class="feature-block">
+                            <div class="feature-icon"><i class="bi bi-person-check-fill"></i></div>
+                            <h4>Certified Instructors</h4>
+                            <p>Professional guidance from experienced coaches who teach safely and clearly.</p>
+                        </div>
+                        <div class="feature-block">
+                            <div class="feature-icon"><i class="bi bi-shield-check"></i></div>
+                            <h4>Safety First</h4>
+                            <p>Structured lessons, rescue protocols, and premium safety equipment built in.</p>
+                        </div>
+                        <div class="feature-block">
+                            <div class="feature-icon"><i class="bi bi-geo-alt-fill"></i></div>
+                            <h4>Ideal Conditions</h4>
+                            <p>Essaouira offers reliable winds, warm water, and beautiful spots for progression.</p>
+                        </div>
+                        <div class="feature-block">
+                            <div class="feature-icon"><i class="bi bi-gear-fill"></i></div>
+                            <h4>Premium Gear</h4>
+                            <p>We use modern kites, boards, and equipment kept in excellent condition.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-padding" id="activities">
+                <div class="container">
+                    <div class="section-heading">
+                        <p class="eyebrow">Choose your adventure</p>
+                        <h2>Water sports experiences built for your next trip.</h2>
+                    </div>
+
+                    <div class="activity-grid">
+                        <article class="activity-card">
+                            <div class="activity-card-image">
+                                <img src="images/professional-golf-player.jpg" alt="Kitesurfing lesson in Morocco" />
+                                <div class="activity-overlay"><a href="kitesurfing.html" class="btn btn-primary">Learn more</a></div>
+                            </div>
+                            <div class="activity-card-body">
+                                <h3>Kitesurfing</h3>
+                                <p>Master the thrill of riding with world-class instruction in ideal Atlantic conditions.</p>
+                                <ul>
+                                    <li>All levels welcome</li>
+                                    <li>Equipment included</li>
+                                    <li>Safe progression</li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article class="activity-card">
+                            <div class="activity-card-image">
+                                <img src="images/girl-taking-selfie-with-friends-golf-field.jpg" alt="Windsurfing lesson in Morocco" />
+                                <div class="activity-overlay"><a href="windsurfing.html" class="btn btn-primary">Learn more</a></div>
+                            </div>
+                            <div class="activity-card-body">
+                                <h3>Windsurfing</h3>
+                                <p>Balance technique, power, and control in a dynamic sport designed for progression.</p>
+                                <ul>
+                                    <li>Beginner to advanced</li>
+                                    <li>Small groups</li>
+                                    <li>Strong local coaching</li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article class="activity-card">
+                            <div class="activity-card-image">
+                                <img src="images/professional-golf-player.jpg" alt="Surfing in Essaouira" />
+                                <div class="activity-overlay"><a href="surfing.html" class="btn btn-primary">Learn more</a></div>
+                            </div>
+                            <div class="activity-card-body">
+                                <h3>Surfing</h3>
+                                <p>Catch waves on stunning beaches with coaching that emphasizes comfort and technique.</p>
+                                <ul>
+                                    <li>Beach breaks nearby</li>
+                                    <li>Progressive coaching</li>
+                                    <li>Flexible schedules</li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article class="activity-card">
+                            <div class="activity-card-image">
+                                <img src="images/girl-taking-selfie-with-friends-golf-field.jpg" alt="Equipment rental" />
+                                <div class="activity-overlay"><a href="equipment-rental.html" class="btn btn-primary">Learn more</a></div>
+                            </div>
+                            <div class="activity-card-body">
+                                <h3>Equipment Rental</h3>
+                                <p>Rent premium gear for your session or your full holiday with transparent pricing.</p>
+                                <ul>
+                                    <li>Quality brand equipment</li>
+                                    <li>Daily and weekly rates</li>
+                                    <li>Inspected before use</li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article class="activity-card">
+                            <div class="activity-card-image">
+                                <img src="images/professional-golf-player.jpg" alt="Accommodation" />
+                                <div class="activity-overlay"><a href="accommodation.html" class="btn btn-primary">Learn more</a></div>
+                            </div>
+                            <div class="activity-card-body">
+                                <h3>Accommodation</h3>
+                                <p>Stay close to the beach with options for solo travelers, couples, and groups.</p>
+                                <ul>
+                                    <li>Partner stays</li>
+                                    <li>Group-friendly options</li>
+                                    <li>Easy beach access</li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article class="activity-card">
+                            <div class="activity-card-image">
+                                <img src="images/girl-taking-selfie-with-friends-golf-field.jpg" alt="Private lesson and transport options" />
+                                <div class="activity-overlay"><a href="#contact" class="btn btn-primary">Ask us</a></div>
+                            </div>
+                            <div class="activity-card-body">
+                                <h3>Private Coaching</h3>
+                                <p>Get personalized progress faster with 1:1 coaching adapted to your goals and level.</p>
+                                <ul>
+                                    <li>Tailored progression</li>
+                                    <li>Flexible scheduling</li>
+                                    <li>Faster improvement</li>
+                                </ul>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-bg section-padding" id="packages">
+                <div class="container">
+                    <div class="section-heading">
+                        <p class="eyebrow">Popular packages</p>
+                        <h2>Choose the lesson plan that fits your goals.</h2>
+                    </div>
+
+                    <div class="package-grid">
+                        <article class="package-card">
+                            <span class="badge badge-info">Best for beginners</span>
+                            <h3>Beginner Course</h3>
+                            <p>Start with the fundamentals in a structured, safe, and motivating environment.</p>
+                            <div class="package-price"><strong>$450</strong><span>3 days</span></div>
+                            <ul>
+                                <li>Safety & beach briefing</li>
+                                <li>All equipment included</li>
+                                <li>Small group learning</li>
+                            </ul>
+                            <a href="#contact" class="btn btn-primary" style="margin-top: 1rem">Reserve now</a>
+                        </article>
+
+                        <article class="package-card">
+                            <span class="badge badge-success">Most popular</span>
+                            <h3>Intermediate Course</h3>
+                            <p>Develop confidence, technique, and control with focused progression and feedback.</p>
+                            <div class="package-price"><strong>$750</strong><span>5 days</span></div>
+                            <ul>
+                                <li>Technique refinement</li>
+                                <li>Progressive coaching</li>
+                                <li>Premium gear included</li>
+                            </ul>
+                            <a href="#contact" class="btn btn-primary" style="margin-top: 1rem">Reserve now</a>
+                        </article>
+
+                        <article class="package-card">
+                            <span class="badge badge-warning">For advanced riders</span>
+                            <h3>Advanced Course</h3>
+                            <p>Push your riding with expert coaching on maneuvers, confidence, and technical precision.</p>
+                            <div class="package-price"><strong>$1200</strong><span>7 days</span></div>
+                            <ul>
+                                <li>Freestyle & racing focus</li>
+                                <li>Expert guidance</li>
+                                <li>High-level progression</li>
+                            </ul>
+                            <a href="#contact" class="btn btn-primary" style="margin-top: 1rem">Reserve now</a>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-padding">
+                <div class="container">
+                    <div class="section-heading">
+                        <p class="eyebrow">Student feedback</p>
+                        <h2>What our students say.</h2>
+                    </div>
+
+                    <div class="testimonial-grid">
+                        <article class="testimonial">
+                            <div class="rating" aria-label="5 out of 5 stars">★★★★★</div>
+                            <p>“Amazing experience. The instructors made me feel safe from day one and helped me progress much faster than I expected.”</p>
+                            <strong>Sarah M.</strong>
+                        </article>
+                        <article class="testimonial">
+                            <div class="rating" aria-label="5 out of 5 stars">★★★★★</div>
+                            <p>“Professional, patient, and extremely knowledgeable. The whole trip felt well organized from the lesson to the beach setup.”</p>
+                            <strong>James L.</strong>
+                        </article>
+                        <article class="testimonial">
+                            <div class="rating" aria-label="5 out of 5 stars">★★★★★</div>
+                            <p>“The school gave me confidence quickly and the location is perfect. I’d highly recommend this to anyone learning in Morocco.”</p>
+                            <strong>Emma K.</strong>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact-section section-bg" id="contact">
+                <div class="container">
+                    <div class="section-heading">
+                        <p class="eyebrow">Contact us</p>
+                        <h2>Ready to start your lesson?</h2>
+                    </div>
+
+                    <div class="contact-layout">
+                        <form class="contact-form" action="#" method="post">
+                            <div class="form-group">
+                                <label class="form-label" for="full-name">Full name</label>
+                                <input class="form-control" id="full-name" name="full-name" type="text" required />
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="email">Email address</label>
+                                <input class="form-control" id="email" name="email" type="email" required />
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="message">How can we help?</label>
+                                <textarea
                                     class="form-control"
-                                    placeholder="Password"
-                                    required=""
-                                />
+                                    id="message"
+                                    name="message"
+                                    placeholder="Tell us your experience level, dates, and preferred sport."
+                                ></textarea>
                             </div>
-
-                            <div class="form-check mb-4">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-
-                                <label class="form-check-label" for="flexCheckDefault"> Remember me </label>
-                            </div>
-
-                            <div class="col-lg-5 col-md-7 col-8 mx-auto">
-                                <button type="submit" class="form-control">Login</button>
-                            </div>
-
-                            <div class="text-center my-4">
-                                <a href="#">Forgotten password?</a>
-                            </div>
-                        </div>
-                    </form>
-
-                    <div class="mt-auto mb-5">
-                        <p>
-                            <strong class="text-white me-3">Any Questions?</strong>
-
-                            <a href="tel: 010-020-0340" class="contact-link"> 010-020-0340 </a>
-                        </p>
-                    </div>
-                </div>
-
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                    <path
-                        fill="#3D405B"
-                        fill-opacity="1"
-                        d="M0,224L34.3,192C68.6,160,137,96,206,90.7C274.3,85,343,139,411,144C480,149,549,107,617,122.7C685.7,139,754,213,823,240C891.4,267,960,245,1029,224C1097.1,203,1166,181,1234,160C1302.9,139,1371,117,1406,106.7L1440,96L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"
-                    ></path>
-                </svg>
-            </div>
-
-            <!-- Welcome to Kite in Morocco -->
-
-            <section class="hero-section d-flex justify-content-center align-items-center" id="section_1">
-                <div class="section-overlay"></div>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                    <path
-                        fill="#3D405B"
-                        fill-opacity="1"
-                        d="M0,224L34.3,192C68.6,160,137,96,206,90.7C274.3,85,343,139,411,144C480,149,549,107,617,122.7C685.7,139,754,213,823,240C891.4,267,960,245,1029,224C1097.1,203,1166,181,1234,160C1302.9,139,1371,117,1406,106.7L1440,96L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z"
-                    ></path>
-                </svg>
-
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6 col-12 mb-5 mb-lg-0">
-                            <h2 class="text-white">Welcome to Kite in Morocco</h2>
-
-                            <h1 class="cd-headline rotate-1 text-white mb-4 pb-2">
-                                <span>We are</span>
-                                <span class="cd-words-wrapper">
-                                    <b class="is-visible">Professional</b>
-                                    <b>Experienced</b>
-                                    <b>Passionate</b>
-                                </span>
-                            </h1>
-
-                            <div class="custom-btn-group">
-                                <a href="#section_2" class="btn custom-btn smoothscroll me-3">Our Story</a>
-
-                                <a href="#section_3" class="link smoothscroll">Enroll Now</a>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6 col-12">
-                            <div class="ratio ratio-16x9">
-                                <iframe
-                                    width="560"
-                                    height="315"
-                                    src="https://www.youtube.com/embed/M0pqy2xgjFE?si=MeFIt_OR33b0b-fy"
-                                    title="YouTube video player"
-                                    frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    referrerpolicy="strict-origin-when-cross-origin"
-                                    allowfullscreen
-                                ></iframe>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                    <path
-                        fill="#ffffff"
-                        fill-opacity="1"
-                        d="M0,224L34.3,192C68.6,160,137,96,206,90.7C274.3,85,343,139,411,144C480,149,549,107,617,122.7C685.7,139,754,213,823,240C891.4,267,960,245,1029,224C1097.1,203,1166,181,1234,160C1302.9,139,1371,117,1406,106.7L1440,96L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"
-                    ></path>
-                </svg>
-            </section>
-
-            <!-- About Kite in Morocco -->
-
-            <section class="about-section section-padding" id="section_2">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12 col-12 text-center">
-                            <h2 class="mb-lg-5 mb-4">About Kite in Morocco</h2>
-                        </div>
-
-                        <div class="col-lg-5 col-12 mb-4 mb-lg-0">
-                            <h3 class="mb-3">Our School History</h3>
-
-                            <p>
-                                <strong>Since 2008, Kite in Morocco</strong> has been the premier kitesurf school in the region. We provide top-quality
-                                instruction and training for all skill levels. Our mission is to share the passion and excitement of kitesurf with everyone who
-                                visits our beautiful coastline.
-                            </p>
-
-                            <p>
-                                Kite in Morocco is dedicated to providing the safest and most enjoyable kitesurf experience. With professional instructors and
-                                world-class equipment, we ensure every student reaches their full potential.
-                            </p>
-                        </div>
-
-                        <div class="col-lg-5 col-12 mb-4 mb-lg-0">
-                            <div class="member-block">
-                                <div class="member-block-image-wrap">
-                                    <img src="images/kite-in-morocco.png" class="member-block-image img-fluid" alt="" />
-
-                                    <ul class="social-icon">
-                                        <li class="social-icon-item">
-                                            <a href="#" class="social-icon-link bi-twitter"></a>
-                                        </li>
-
-                                        <li class="social-icon-item">
-                                            <a href="#" class="social-icon-link bi-whatsapp"></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Why Choose Kite in Morocco -->
-
-            <section class="section-bg" id="section_2b">
-                <svg viewBox="0 0 1265 144" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <path fill="rgba(255, 255, 255, 1)" d="M 0 40 C 164 40 164 20 328 20 L 328 20 L 328 0 L 0 0 Z" stroke-width="0"></path>
-                    <path fill="rgba(255, 255, 255, 1)" d="M 327 20 C 445.5 20 445.5 89 564 89 L 564 89 L 564 0 L 327 0 Z" stroke-width="0"></path>
-                    <path fill="rgba(255, 255, 255, 1)" d="M 563 89 C 724.5 89 724.5 48 886 48 L 886 48 L 886 0 L 563 0 Z" stroke-width="0"></path>
-                    <path fill="rgba(255, 255, 255, 1)" d="M 885 48 C 1006.5 48 1006.5 67 1128 67 L 1128 67 L 1128 0 L 885 0 Z" stroke-width="0"></path>
-                    <path fill="rgba(255, 255, 255, 1)" d="M 1127 67 C 1196 67 1196 0 1265 0 L 1265 0 L 1265 0 L 1127 0 Z" stroke-width="0"></path>
-                </svg>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12 col-12 text-center mb-lg-5 mb-4">
-                            <h2>Why Choose <span>Kite in Morocco</span></h2>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
-                            <div class="feature-block text-center">
-                                <div class="feature-icon mb-3">
-                                    <i class="bi bi-person-check-fill" style="font-size: 2.5rem; color: #81b29a"></i>
-                                </div>
-                                <h4 class="mb-3">Certified Instructors</h4>
-                                <p>Professional, internationally certified instructors with years of kitesurf experience and a passion for teaching.</p>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
-                            <div class="feature-block text-center">
-                                <div class="feature-icon mb-3">
-                                    <i class="bi bi-shield-check" style="font-size: 2.5rem; color: #81b29a"></i>
-                                </div>
-                                <h4 class="mb-3">Safety First</h4>
-                                <p>Rigorous safety protocols, premium equipment, and expert guidance ensure your complete peace of mind.</p>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
-                            <div class="feature-block text-center">
-                                <div class="feature-icon mb-3">
-                                    <i class="bi bi-gear-fill" style="font-size: 2.5rem; color: #81b29a"></i>
-                                </div>
-                                <h4 class="mb-3">Top Equipment</h4>
-                                <p>High-quality kites, boards, and gear maintained to the highest standards and included in all courses.</p>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
-                            <div class="feature-block text-center">
-                                <div class="feature-icon mb-3">
-                                    <i class="bi bi-geo-alt-fill" style="font-size: 2.5rem; color: #81b29a"></i>
-                                </div>
-                                <h4 class="mb-3">Prime Location</h4>
-                                <p>Located in beautiful Essaouira with consistent year-round winds and pristine waters perfect for learning.</p>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
-                            <div class="feature-block text-center">
-                                <div class="feature-icon mb-3">
-                                    <i class="bi bi-people-fill" style="font-size: 2.5rem; color: #81b29a"></i>
-                                </div>
-                                <h4 class="mb-3">Small Classes</h4>
-                                <p>Personalized attention with small group sizes ensuring you receive the guidance you need to progress.</p>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
-                            <div class="feature-block text-center">
-                                <div class="feature-icon mb-3">
-                                    <i class="bi bi-calendar3" style="font-size: 2.5rem; color: #81b29a"></i>
-                                </div>
-                                <h4 class="mb-3">Flexible Scheduling</h4>
-                                <p>Courses available daily with flexible scheduling options to fit your availability and learning pace.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <svg viewBox="0 0 1265 144" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <path fill="rgba(255, 255, 255, 1)" d="M 0 40 C 164 40 164 20 328 20 L 328 20 L 328 0 L 0 0 Z" stroke-width="0"></path>
-                    <path fill="rgba(255, 255, 255, 1)" d="M 327 20 C 445.5 20 445.5 89 564 89 L 564 89 L 564 0 L 327 0 Z" stroke-width="0"></path>
-                    <path fill="rgba(255, 255, 255, 1)" d="M 563 89 C 724.5 89 724.5 48 886 48 L 886 48 L 886 0 L 563 0 Z" stroke-width="0"></path>
-                    <path fill="rgba(255, 255, 255, 1)" d="M 885 48 C 1006.5 48 1006.5 67 1128 67 L 1128 67 L 1128 0 L 885 0 Z" stroke-width="0"></path>
-                    <path fill="rgba(255, 255, 255, 1)" d="M 1127 67 C 1196 67 1196 0 1265 0 L 1265 0 L 1265 0 L 1127 0 Z" stroke-width="0"></path>
-                </svg>
-            </section>
-
-            <!-- Explore Activities -->
-
-            <!-- <section class="section-padding section-bg" id="section_explore"> -->
-            <section class="membership-section section-padding" id="section_3">
-                <div class="container">
-                    <div class="row mb-5">
-                        <div class="col-lg-8 col-12 mx-auto text-center">
-                            <h2 class="mb-3">Explore Our Activities</h2>
-                            <p class="lead">Discover the perfect water sport adventure tailored to your interests and skill level</p>
-                        </div>
-                    </div>
-
-                    <div class="row g-4">
-                        <!-- Kitesurfing -->
-                        <div class="col-lg-4 col-md-6 col-12">
-                            <div class="activity-card h-100">
-                                <div class="activity-card-image">
-                                    <img src="images/professional-golf-player.jpg" class="img-fluid w-100" alt="Kitesurfing" />
-                                    <div class="activity-overlay">
-                                        <a href="kitesurfing.html" class="btn custom-btn">Learn More</a>
-                                    </div>
-                                </div>
-                                <div class="activity-card-body p-4">
-                                    <h4 class="mb-2">Kitesurfing</h4>
-                                    <p class="mb-3">Master the ultimate air sport with world-class instructors in Essaouira's perfect conditions.</p>
-                                    <ul class="list-unstyled small">
-                                        <li class="mb-2"><i class="bi bi-check-circle-fill" style="color: #81b29a"></i> All skill levels</li>
-                                        <li class="mb-2"><i class="bi bi-check-circle-fill" style="color: #81b29a"></i> Year-round lessons</li>
-                                        <li class="mb-2"><i class="bi bi-check-circle-fill" style="color: #81b29a"></i> Equipment included</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Windsurfing -->
-                        <div class="col-lg-4 col-md-6 col-12">
-                            <div class="activity-card h-100">
-                                <div class="activity-card-image">
-                                    <img src="images/girl-taking-selfie-with-friends-golf-field.jpg" class="img-fluid w-100" alt="Windsurfing" />
-                                    <div class="activity-overlay">
-                                        <a href="windsurfing.html" class="btn custom-btn">Learn More</a>
-                                    </div>
-                                </div>
-                                <div class="activity-card-body p-4">
-                                    <h4 class="mb-2">Windsurfing</h4>
-                                    <p class="mb-3">Experience the thrill of riding the wind with our certified windsurfing instructors.</p>
-                                    <ul class="list-unstyled small">
-                                        <li class="mb-2"><i class="bi bi-check-circle-fill" style="color: #81b29a"></i> Beginner to advanced</li>
-                                        <li class="mb-2"><i class="bi bi-check-circle-fill" style="color: #81b29a"></i> Small group classes</li>
-                                        <li class="mb-2"><i class="bi bi-check-circle-fill" style="color: #81b29a"></i> Premium equipment</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Surfing -->
-                        <div class="col-lg-4 col-md-6 col-12">
-                            <div class="activity-card h-100">
-                                <div class="activity-card-image">
-                                    <img src="images/professional-golf-player.jpg" class="img-fluid w-100" alt="Surfing" />
-                                    <div class="activity-overlay">
-                                        <a href="surfing.html" class="btn custom-btn">Learn More</a>
-                                    </div>
-                                </div>
-                                <div class="activity-card-body p-4">
-                                    <h4 class="mb-2">Surfing</h4>
-                                    <p class="mb-3">Catch waves on Morocco's stunning coastline with expert guidance.</p>
-                                    <ul class="list-unstyled small">
-                                        <li class="mb-2"><i class="bi bi-check-circle-fill" style="color: #81b29a"></i> Beach breaks nearby</li>
-                                        <li class="mb-2"><i class="bi bi-check-circle-fill" style="color: #81b29a"></i> Summer & winter swells</li>
-                                        <li class="mb-2"><i class="bi bi-check-circle-fill" style="color: #81b29a"></i> Board rental available</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Equipment Rental -->
-                        <div class="col-lg-4 col-md-6 col-12">
-                            <div class="activity-card h-100">
-                                <div class="activity-card-image">
-                                    <img src="images/girl-taking-selfie-with-friends-golf-field.jpg" class="img-fluid w-100" alt="Equipment Rental" />
-                                    <div class="activity-overlay">
-                                        <a href="equipment-rental.html" class="btn custom-btn">Learn More</a>
-                                    </div>
-                                </div>
-                                <div class="activity-card-body p-4">
-                                    <h4 class="mb-2">Equipment Rental</h4>
-                                    <p class="mb-3">Rent premium gear for your water sports adventure without breaking the bank.</p>
-                                    <ul class="list-unstyled small">
-                                        <li class="mb-2"><i class="bi bi-check-circle-fill" style="color: #81b29a"></i> Competitive rates</li>
-                                        <li class="mb-2"><i class="bi bi-check-circle-fill" style="color: #81b29a"></i> Maintained equipment</li>
-                                        <li class="mb-2"><i class="bi bi-check-circle-fill" style="color: #81b29a"></i> Full insurance</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Accommodation -->
-                        <div class="col-lg-4 col-md-6 col-12">
-                            <div class="activity-card h-100">
-                                <div class="activity-card-image">
-                                    <img src="images/professional-golf-player.jpg" class="img-fluid w-100" alt="Accommodation" />
-                                    <div class="activity-overlay">
-                                        <a href="accommodation.html" class="btn custom-btn">Learn More</a>
-                                    </div>
-                                </div>
-                                <div class="activity-card-body p-4">
-                                    <h4 class="mb-2">Accommodation</h4>
-                                    <p class="mb-3">Stay comfortable during your training with our curated partner hotels.</p>
-                                    <ul class="list-unstyled small">
-                                        <li class="mb-2"><i class="bi bi-check-circle-fill" style="color: #81b29a"></i> Partner hotels</li>
-                                        <li class="mb-2"><i class="bi bi-check-circle-fill" style="color: #81b29a"></i> Group discounts</li>
-                                        <li class="mb-2"><i class="bi bi-check-circle-fill" style="color: #81b29a"></i> Beach proximity</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Transportation -->
-                        <div class="col-lg-4 col-md-6 col-12">
-                            <div class="activity-card h-100">
-                                <div class="activity-card-image">
-                                    <img src="images/girl-taking-selfie-with-friends-golf-field.jpg" class="img-fluid w-100" alt="Transportation" />
-                                    <div class="activity-overlay">
-                                        <a href="#section_5" class="btn custom-btn">Contact Us</a>
-                                    </div>
-                                </div>
-                                <div class="activity-card-body p-4">
-                                    <h4 class="mb-2">Transportation</h4>
-                                    <p class="mb-3">Hassle-free airport transfers and daily transportation to training spots.</p>
-                                    <ul class="list-unstyled small">
-                                        <li class="mb-2"><i class="bi bi-check-circle-fill" style="color: #81b29a"></i> Airport pickup</li>
-                                        <li class="mb-2"><i class="bi bi-check-circle-fill" style="color: #81b29a"></i> Daily shuttles</li>
-                                        <li class="mb-2"><i class="bi bi-check-circle-fill" style="color: #81b29a"></i> Group rates</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Training Programs -->
-
-            <!-- <section class="membership-section section-padding" id="section_3">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12 col-12 text-center mx-auto mb-lg-5 mb-4">
-                            <h2><span>Training</span> Programs</h2>
-                        </div>
-
-                        <div class="col-lg-6 col-12 mb-3 mb-lg-0">
-                            <h4 class="mb-4 pb-lg-2">Course Pricing</h4>
-
-                            <div class="table-responsive">
-                                <table class="table text-center">
-                                    <thead>
-                                        <tr>
-                                            <th style="width: 34%">Yearly Access</th>
-
-                                            <th style="width: 22%">T1 $420</th>
-
-                                            <th style="width: 22%">T2 $640</th>
-
-                                            <th style="width: 22%">T3 $860</th>
-                                        </tr>
-                                    </thead>
-
-                                    <tbody>
-                                        <tr>
-                                            <th scope="row" class="text-start">Equipment Included</th>
-
-                                            <td>
-                                                <i class="bi-check-circle-fill"></i>
-                                            </td>
-
-                                            <td>
-                                                <i class="bi-check-circle-fill"></i>
-                                            </td>
-
-                                            <td>
-                                                <i class="bi-check-circle-fill"></i>
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <th scope="row" class="text-start">School Facilities</th>
-
-                                            <td>
-                                                <i class="bi-check-circle-fill"></i>
-                                            </td>
-
-                                            <td>
-                                                <i class="bi-check-circle-fill"></i>
-                                            </td>
-
-                                            <td>
-                                                <i class="bi-check-circle-fill"></i>
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <th scope="row" class="text-start">Advanced Courses</th>
-
-                                            <td>
-                                                <i class="bi-x-circle-fill"></i>
-                                            </td>
-
-                                            <td>
-                                                <i class="bi-check-circle-fill"></i>
-                                            </td>
-
-                                            <td>
-                                                <i class="bi-check-circle-fill"></i>
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <th scope="row" class="text-start">Weekend Classes</th>
-
-                                            <td>
-                                                <i class="bi-x-circle-fill"></i>
-                                            </td>
-
-                                            <td>
-                                                <i class="bi-check-circle-fill"></i>
-                                            </td>
-
-                                            <td>
-                                                <i class="bi-check-circle-fill"></i>
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <th scope="row" class="text-start">Pro Training</th>
-
-                                            <td>
-                                                <i class="bi-x-circle-fill"></i>
-                                            </td>
-
-                                            <td>
-                                                <i class="bi-x-circle-fill"></i>
-                                            </td>
-
-                                            <td>
-                                                <i class="bi-check-circle-fill"></i>
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <th scope="row" class="text-start">Instructor Access</th>
-
-                                            <td>
-                                                <i class="bi-x-circle-fill"></i>
-                                            </td>
-
-                                            <td>
-                                                <i class="bi-x-circle-fill"></i>
-                                            </td>
-
-                                            <td>
-                                                <i class="bi-check-circle-fill"></i>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-5 col-12 mx-auto">
-                            <h4 class="mb-4 pb-lg-2">Get Started Today!</h4>
-                            <form action="#" method="post" class="custom-form membership-form shadow-lg" role="form">
-                                <h4 class="text-white mb-4">Enroll Now</h4>
-
-                                <div class="form-floating">
-                                    <input type="text" name="full-name" id="full-name" class="form-control" placeholder="Full Name" required="" />
-
-                                    <label for="floatingInput">Full Name</label>
-                                </div>
-
-                                <div class="form-floating">
-                                    <input
-                                        type="email"
-                                        name="email"
-                                        id="email"
-                                        pattern="[^ @]*@[^ @]*"
-                                        class="form-control"
-                                        placeholder="Email address"
-                                        required=""
-                                    />
-
-                                    <label for="floatingInput">Email address</label>
-                                </div>
-
-                                <div class="form-floating">
-                                    <textarea class="form-control" id="message" name="message" placeholder="Describe message here"></textarea>
-
-                                    <label for="floatingTextarea"> Comments</label>
-                                </div>
-
-                                <button type="submit" class="form-control">Submit</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </section> -->
-
-            <!-- What Our Students Say -->
-
-            <section class="section-bg-image">
-                <svg viewBox="0 0 1265 144" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <path fill="rgba(255, 255, 255, 1)" d="M 0 40 C 164 40 164 20 328 20 L 328 20 L 328 0 L 0 0 Z" stroke-width="0"></path>
-                    <path fill="rgba(255, 255, 255, 1)" d="M 327 20 C 445.5 20 445.5 89 564 89 L 564 89 L 564 0 L 327 0 Z" stroke-width="0"></path>
-                    <path fill="rgba(255, 255, 255, 1)" d="M 563 89 C 724.5 89 724.5 48 886 48 L 886 48 L 886 0 L 563 0 Z" stroke-width="0"></path>
-                    <path fill="rgba(255, 255, 255, 1)" d="M 885 48 C 1006.5 48 1006.5 67 1128 67 L 1128 67 L 1128 0 L 885 0 Z" stroke-width="0"></path>
-                    <path fill="rgba(255, 255, 255, 1)" d="M 1127 67 C 1196 67 1196 0 1265 0 L 1265 0 L 1265 0 L 1127 0 Z" stroke-width="0"></path>
-                </svg>
-
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12 col-12 text-center mb-lg-5 mb-4">
-                            <h2 class="text-white">What Our Students Say</h2>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
-                            <div
-                                class="testimonial-block"
-                                style="background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1)"
-                            >
-                                <div class="testimonial-rating mb-3">
-                                    <i class="bi bi-star-fill" style="color: #ffd700"></i>
-                                    <i class="bi bi-star-fill" style="color: #ffd700"></i>
-                                    <i class="bi bi-star-fill" style="color: #ffd700"></i>
-                                    <i class="bi bi-star-fill" style="color: #ffd700"></i>
-                                    <i class="bi bi-star-fill" style="color: #ffd700"></i>
-                                </div>
-                                <p class="mb-3">
-                                    "Amazing experience! Michael is an incredible instructor who made me feel safe and confident from day one. I went from never
-                                    having kited to actually getting airborne!"
-                                </p>
-                                <div class="testimonial-author">
-                                    <strong>Sarah M.</strong>
-                                    <p class="mb-0" style="font-size: 0.9rem; color: #666">Beginner Course Student</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
-                            <div
-                                class="testimonial-block"
-                                style="background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1)"
-                            >
-                                <div class="testimonial-rating mb-3">
-                                    <i class="bi bi-star-fill" style="color: #ffd700"></i>
-                                    <i class="bi bi-star-fill" style="color: #ffd700"></i>
-                                    <i class="bi bi-star-fill" style="color: #ffd700"></i>
-                                    <i class="bi bi-star-fill" style="color: #ffd700"></i>
-                                    <i class="bi bi-star-fill" style="color: #ffd700"></i>
-                                </div>
-                                <p class="mb-3">
-                                    "The facilities are top-notch and the equipment is the best I've used. Sandy's focus on safety is really professional.
-                                    Highly recommend to anyone wanting to learn kiting!"
-                                </p>
-                                <div class="testimonial-author">
-                                    <strong>James L.</strong>
-                                    <p class="mb-0" style="font-size: 0.9rem; color: #666">Intermediate Course Student</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
-                            <div
-                                class="testimonial-block"
-                                style="background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1)"
-                            >
-                                <div class="testimonial-rating mb-3">
-                                    <i class="bi bi-star-fill" style="color: #ffd700"></i>
-                                    <i class="bi bi-star-fill" style="color: #ffd700"></i>
-                                    <i class="bi bi-star-fill" style="color: #ffd700"></i>
-                                    <i class="bi bi-star-fill" style="color: #ffd700"></i>
-                                    <i class="bi bi-star-fill" style="color: #ffd700"></i>
-                                </div>
-                                <p class="mb-3">
-                                    "Took the advanced course and absolutely loved it. The instructors are knowledgeable, supportive, and really know how to
-                                    push you to improve. Worth every penny!"
-                                </p>
-                                <div class="testimonial-author">
-                                    <strong>Emma K.</strong>
-                                    <p class="mb-0" style="font-size: 0.9rem; color: #666">Advanced Course Student</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <svg viewBox="0 0 1265 144" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <path fill="rgba(255, 255, 255, 1)" d="M 0 40 C 164 40 164 20 328 20 L 328 20 L 328 0 L 0 0 Z" stroke-width="0"></path>
-                    <path fill="rgba(255, 255, 255, 1)" d="M 327 20 C 445.5 20 445.5 89 564 89 L 564 89 L 564 0 L 327 0 Z" stroke-width="0"></path>
-                    <path fill="rgba(255, 255, 255, 1)" d="M 563 89 C 724.5 89 724.5 48 886 48 L 886 48 L 886 0 L 563 0 Z" stroke-width="0"></path>
-                    <path fill="rgba(255, 255, 255, 1)" d="M 885 48 C 1006.5 48 1006.5 67 1128 67 L 1128 67 L 1128 0 L 885 0 Z" stroke-width="0"></path>
-                    <path fill="rgba(255, 255, 255, 1)" d="M 1127 67 C 1196 67 1196 0 1265 0 L 1265 0 L 1265 0 L 1127 0 Z" stroke-width="0"></path>
-                </svg>
-            </section>
-
-            <!-- Packages -->
-
-            <section class="events-section section-bg section-padding" id="section_4">
-                <svg viewBox="0 0 1265 144" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <path fill="rgba(255, 255, 255, 1)" d="M 0 40 C 164 40 164 20 328 20 L 328 20 L 328 0 L 0 0 Z" stroke-width="0"></path>
-                    <path fill="rgba(255, 255, 255, 1)" d="M 327 20 C 445.5 20 445.5 89 564 89 L 564 89 L 564 0 L 327 0 Z" stroke-width="0"></path>
-                    <path fill="rgba(255, 255, 255, 1)" d="M 563 89 C 724.5 89 724.5 48 886 48 L 886 48 L 886 0 L 563 0 Z" stroke-width="0"></path>
-                    <path fill="rgba(255, 255, 255, 1)" d="M 885 48 C 1006.5 48 1006.5 67 1128 67 L 1128 67 L 1128 0 L 885 0 Z" stroke-width="0"></path>
-                    <path fill="rgba(255, 255, 255, 1)" d="M 1127 67 C 1196 67 1196 0 1265 0 L 1265 0 L 1265 0 L 1127 0 Z" stroke-width="0"></path>
-                </svg>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12 col-12 text-center mb-lg-5 mb-4">
-                            <h2 class="mb-lg-3">Our Packages</h2>
-                            <p class="lead">Choose the perfect package for your kitesurf adventure</p>
-                        </div>
-                    </div>
-
-                    <div class="row g-4">
-                        <!-- Beginner Course Package -->
-                        <div class="col-lg-6 col-md-6 col-12">
-                            <div class="row custom-block mb-3">
-                                <div class="col-lg-4 col-md-12 col-12">
-                                    <div class="custom-block-image-wrap">
-                                        <img src="images/professional-golf-player.jpg" class="custom-block-image img-fluid" alt="Beginner Course" />
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-8 col-md-12 col-12">
-                                    <div class="custom-block-info mt-2 mt-lg-0">
-                                        <h5 class="events-title mb-2">Beginner Course</h5>
-                                        <p class="mb-2"><small>Perfect for first-timers</small></p>
-                                        <p class="mb-3">
-                                            3 days of group lessons (2-4 students) covering basics, safety, and foundational skills. Includes all equipment.
-                                        </p>
-                                        <div class="border-top pt-3">
-                                            <div class="d-flex justify-content-between align-items-center">
-                                                <span class="custom-block-span">3 Days</span>
-                                                <strong class="text-success">$450</strong>
-                                            </div>
-                                            <a href="event-detail.html" class="btn custom-btn btn-sm mt-3 w-100">Learn More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Intermediate Course Package -->
-                        <div class="col-lg-6 col-md-6 col-12">
-                            <div class="row custom-block custom-block-bg mb-3">
-                                <div class="col-lg-4 col-md-12 col-12">
-                                    <div class="custom-block-image-wrap">
-                                        <img
-                                            src="images/girl-taking-selfie-with-friends-golf-field.jpg"
-                                            class="custom-block-image img-fluid"
-                                            alt="Intermediate Course"
-                                        />
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-8 col-md-12 col-12">
-                                    <div class="custom-block-info mt-2 mt-lg-0">
-                                        <h5 class="events-title mb-2">Intermediate Course</h5>
-                                        <p class="mb-2"><small>Build your skills</small></p>
-                                        <p class="mb-3">
-                                            5 days of semi-private instruction (2-3 students). Improve techniques, board control, and advanced maneuvers. All
-                                            gear included.
-                                        </p>
-                                        <div class="border-top pt-3">
-                                            <div class="d-flex justify-content-between align-items-center">
-                                                <span class="custom-block-span">5 Days</span>
-                                                <strong class="text-success">$750</strong>
-                                            </div>
-                                            <a href="event-detail.html" class="btn custom-btn btn-sm mt-3 w-100">Learn More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Advanced Course Package -->
-                        <div class="col-lg-6 col-md-6 col-12">
-                            <div class="row custom-block mb-3">
-                                <div class="col-lg-4 col-md-12 col-12">
-                                    <div class="custom-block-image-wrap">
-                                        <img src="images/professional-golf-player.jpg" class="custom-block-image img-fluid" alt="Advanced Course" />
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-8 col-md-12 col-12">
-                                    <div class="custom-block-info mt-2 mt-lg-0">
-                                        <h5 class="events-title mb-2">Advanced Course</h5>
-                                        <p class="mb-2"><small>Master the sport</small></p>
-                                        <p class="mb-3">
-                                            7 days of intensive small group training (1-2 students). Focus on tricks, freestyle, and racing techniques with
-                                            expert instructors.
-                                        </p>
-                                        <div class="border-top pt-3">
-                                            <div class="d-flex justify-content-between align-items-center">
-                                                <span class="custom-block-span">7 Days</span>
-                                                <strong class="text-success">$1,200</strong>
-                                            </div>
-                                            <a href="event-detail.html" class="btn custom-btn btn-sm mt-3 w-100">Learn More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Holiday Retreat Package -->
-                        <div class="col-lg-6 col-md-6 col-12">
-                            <div class="row custom-block custom-block-bg mb-3">
-                                <div class="col-lg-4 col-md-12 col-12">
-                                    <div class="custom-block-image-wrap">
-                                        <img
-                                            src="images/girl-taking-selfie-with-friends-golf-field.jpg"
-                                            class="custom-block-image img-fluid"
-                                            alt="Holiday Retreat"
-                                        />
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-8 col-md-12 col-12">
-                                    <div class="custom-block-info mt-2 mt-lg-0">
-                                        <h5 class="events-title mb-2">Holiday Retreat Package</h5>
-                                        <p class="mb-2"><small>Complete experience</small></p>
-                                        <p class="mb-3">
-                                            5 days of courses + accommodation at partner hotel + daily meals + airport transfers. Fully immersive kitesurf
-                                            vacation.
-                                        </p>
-                                        <div class="border-top pt-3">
-                                            <div class="d-flex justify-content-between align-items-center">
-                                                <span class="custom-block-span">5 Days</span>
-                                                <strong class="text-success">$1,500</strong>
-                                            </div>
-                                            <a href="event-detail.html" class="btn custom-btn btn-sm mt-3 w-100">Learn More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Private Intensive Package -->
-                        <div class="col-lg-6 col-md-6 col-12">
-                            <div class="row custom-block mb-3">
-                                <div class="col-lg-4 col-md-12 col-12">
-                                    <div class="custom-block-image-wrap">
-                                        <img src="images/professional-golf-player.jpg" class="custom-block-image img-fluid" alt="Private Intensive" />
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-8 col-md-12 col-12">
-                                    <div class="custom-block-info mt-2 mt-lg-0">
-                                        <h5 class="events-title mb-2">Private Intensive</h5>
-                                        <p class="mb-2"><small>1-on-1 coaching</small></p>
-                                        <p class="mb-3">
-                                            Personalized one-on-one instruction with certified instructor. Tailored to your goals, pace, and skill level.
-                                            Maximum flexibility.
-                                        </p>
-                                        <div class="border-top pt-3">
-                                            <div class="d-flex justify-content-between align-items-center">
-                                                <span class="custom-block-span">Per Day</span>
-                                                <strong class="text-success">$250</strong>
-                                            </div>
-                                            <a href="event-detail.html" class="btn custom-btn btn-sm mt-3 w-100">Learn More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Combo Package: Kite & Surf -->
-                        <div class="col-lg-6 col-md-6 col-12">
-                            <div class="row custom-block custom-block-bg mb-3">
-                                <div class="col-lg-4 col-md-12 col-12">
-                                    <div class="custom-block-image-wrap">
-                                        <img
-                                            src="images/girl-taking-selfie-with-friends-golf-field.jpg"
-                                            class="custom-block-image img-fluid"
-                                            alt="Kite & Surf Combo"
-                                        />
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-8 col-md-12 col-12">
-                                    <div class="custom-block-info mt-2 mt-lg-0">
-                                        <h5 class="events-title mb-2">Kite & Surf Combo</h5>
-                                        <p class="mb-2"><small>Two sports, one trip</small></p>
-                                        <p class="mb-3">
-                                            7 days: 4 days kitesurf lessons + 3 days surf coaching. Experience both water sports with expert instructors. Meals
-                                            & transport included.
-                                        </p>
-                                        <div class="border-top pt-3">
-                                            <div class="d-flex justify-content-between align-items-center">
-                                                <span class="custom-block-span">7 Days</span>
-                                                <strong class="text-success">$1,400</strong>
-                                            </div>
-                                            <a href="event-detail.html" class="btn custom-btn btn-sm mt-3 w-100">Learn More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <svg viewBox="0 0 1265 144" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <path fill="rgba(255, 255, 255, 1)" d="M 0 40 C 164 40 164 20 328 20 L 328 20 L 328 0 L 0 0 Z" stroke-width="0"></path>
-                    <path fill="rgba(255, 255, 255, 1)" d="M 327 20 C 445.5 20 445.5 89 564 89 L 564 89 L 564 0 L 327 0 Z" stroke-width="0"></path>
-                    <path fill="rgba(255, 255, 255, 1)" d="M 563 89 C 724.5 89 724.5 48 886 48 L 886 48 L 886 0 L 563 0 Z" stroke-width="0"></path>
-                    <path fill="rgba(255, 255, 255, 1)" d="M 885 48 C 1006.5 48 1006.5 67 1128 67 L 1128 67 L 1128 0 L 885 0 Z" stroke-width="0"></path>
-                    <path fill="rgba(255, 255, 255, 1)" d="M 1127 67 C 1196 67 1196 0 1265 0 L 1265 0 L 1265 0 L 1127 0 Z" stroke-width="0"></path>
-                </svg>
-            </section>
-
-            <!-- Contact Us -->
-
-            <section class="contact-section section-padding" id="section_5">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-5 col-12">
-                            <form action="#" method="post" class="custom-form contact-form" role="form">
-                                <h2 class="mb-4 pb-2">Contact Us</h2>
-
-                                <div class="row">
-                                    <div class="col-lg-6 col-md-6 col-12">
-                                        <div class="form-floating">
-                                            <input type="text" name="full-name" id="full-name" class="form-control" placeholder="Full Name" required="" />
-
-                                            <label for="floatingInput">Full Name</label>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-6 col-md-6 col-12">
-                                        <div class="form-floating">
-                                            <input
-                                                type="email"
-                                                name="email"
-                                                id="email"
-                                                pattern="[^ @]*@[^ @]*"
-                                                class="form-control"
-                                                placeholder="Email address"
-                                                required=""
-                                            />
-
-                                            <label for="floatingInput">Email address</label>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-12 col-12">
-                                        <div class="form-floating">
-                                            <textarea class="form-control" id="message" name="message" placeholder="Describe message here"></textarea>
-
-                                            <label for="floatingTextarea">Message</label>
-                                        </div>
-
-                                        <button type="submit" class="form-control">Submit Form</button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-
-                        <div class="col-lg-6 col-12">
-                            <div class="contact-info mt-5">
-                                <div class="contact-info-item">
-                                    <div class="contact-info-body">
-                                        <strong>Essaouira, Morocco</strong>
-
-                                        <p class="mt-2 mb-1">
-                                            <a href="tel: +212-5-24-47-59-92" class="contact-link"> +212 (0)5 24 47 59 92 </a>
-                                        </p>
-
-                                        <p class="mb-0">
-                                            <a href="mailto:info@company.com" class="contact-link"> info@company.com </a>
-                                        </p>
-                                    </div>
-
-                                    <div class="contact-info-footer">
-                                        <a href="#">Directions</a>
-                                    </div>
-                                </div>
-
-                                <img src="images/WorldMap.svg" class="img-fluid" alt="" />
-                            </div>
-                        </div>
+                            <button type="submit" class="btn btn-primary">Send inquiry</button>
+                        </form>
+
+                        <aside class="contact-card">
+                            <h3>Visit or contact us</h3>
+                            <ul class="contact-list">
+                                <li>
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                    <div><strong>Location</strong><br />Essaouira, Morocco</div>
+                                </li>
+                                <li>
+                                    <i class="bi bi-telephone-fill"></i>
+                                    <div><strong>Phone</strong><br /><a href="tel:+212524475992">+212 (0)5 24 47 59 92</a></div>
+                                </li>
+                                <li>
+                                    <i class="bi bi-envelope-fill"></i>
+                                    <div><strong>Email</strong><br /><a href="mailto:info@kiteinmorocco.com">info@kiteinmorocco.com</a></div>
+                                </li>
+                            </ul>
+                        </aside>
                     </div>
                 </div>
             </section>
         </main>
 
-        <!-- Footer -->
-
         <footer class="site-footer">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 col-12 me-auto mb-5 mb-lg-0">
-                        <a class="navbar-brand d-flex align-items-center" href="index.html">
-                            <img src="images/logo.png" class="navbar-brand-image img-fluid" alt="" />
-                            <span class="navbar-brand-text">
-                                Kite
-                                <small>in Morocco</small>
-                            </span>
+                <div class="footer-grid">
+                    <div>
+                        <a class="navbar-brand" href="#home" aria-label="Kite in Morocco home">
+                            <img src="images/logo.jpg" class="navbar-brand-image" alt="Kite in Morocco logo" />
+                            <span class="navbar-brand-text">Kite <small>in Morocco</small></span>
                         </a>
+                        <p style="margin-top: 1rem">Professional lessons, gear rental, and unforgettable kite experiences in Essaouira.</p>
                     </div>
-
-                    <div class="col-lg-3 col-12">
-                        <h5 class="site-footer-title mb-4">Join Us</h5>
-
-                        <p class="d-flex border-bottom pb-3 mb-3 me-lg-3">
-                            <span>Mon-Fri</span>
-                            6:00 AM - 6:00 PM
-                        </p>
-
-                        <p class="d-flex me-lg-3">
-                            <span>Sat-Sun</span>
-                            6:30 AM - 8:30 PM
-                        </p>
-                        <br />
-                        <p class="copyright-text">Copyright © 2026 Kite in Morocco</p>
-                    </div>
-
-                    <div class="col-lg-2 col-12 ms-auto">
-                        <ul class="social-icon mt-lg-5 mt-3 mb-4">
-                            <li class="social-icon-item">
-                                <a href="#" class="social-icon-link bi-instagram"></a>
-                            </li>
-
-                            <li class="social-icon-item">
-                                <a href="#" class="social-icon-link bi-twitter"></a>
-                            </li>
-
-                            <li class="social-icon-item">
-                                <a href="#" class="social-icon-link bi-whatsapp"></a>
-                            </li>
+                    <div>
+                        <h5>Quick links</h5>
+                        <ul class="footer-links">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#activities">Activities</a></li>
+                            <li><a href="#packages">Packages</a></li>
+                            <li><a href="#contact">Contact</a></li>
                         </ul>
-                        <p class="copyright-text">
-                            Design:
-                            <a rel="nofollow" href="https://templatemo.com" target="_blank">TemplateMo</a>
-                        </p>
+                    </div>
+                    <div>
+                        <h5>Activities</h5>
+                        <ul class="footer-links">
+                            <li><a href="kitesurfing.html">Kitesurfing</a></li>
+                            <li><a href="windsurfing.html">Windsurfing</a></li>
+                            <li><a href="surfing.html">Surfing</a></li>
+                            <li><a href="equipment-rental.html">Rental</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h5>Contact</h5>
+                        <ul class="footer-contact">
+                            <li><a href="tel:+212524475992">+212 (0)5 24 47 59 92</a></li>
+                            <li><a href="mailto:info@kiteinmorocco.com">info@kiteinmorocco.com</a></li>
+                            <li>Essaouira, Morocco</li>
+                        </ul>
                     </div>
                 </div>
-            </div>
 
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                <path
-                    fill="#81B29A"
-                    fill-opacity="1"
-                    d="M0,224L34.3,192C68.6,160,137,96,206,90.7C274.3,85,343,139,411,144C480,149,549,107,617,122.7C685.7,139,754,213,823,240C891.4,267,960,245,1029,224C1097.1,203,1166,181,1234,160C1302.9,139,1371,117,1406,106.7L1440,96L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"
-                ></path>
-            </svg>
+                <div class="footer-bottom">
+                    <span>© <span data-current-year></span> Kite in Morocco. All rights reserved.</span>
+                    <span>Built for safe learning and unforgettable sessions.</span>
+                </div>
+            </div>
         </footer>
 
-        <!-- JAVASCRIPT FILES -->
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.bundle.min.js"></script>
-        <script src="js/jquery.sticky.js"></script>
-        <script src="js/click-scroll.js"></script>
-        <script src="js/animated-headline.js"></script>
-        <script src="js/modernizr.js"></script>
         <script src="js/custom.js"></script>
     </body>
 </html>

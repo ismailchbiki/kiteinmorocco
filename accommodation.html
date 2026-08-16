@@ -3,24 +3,22 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="Accommodation options in Essaouira. Partner hotels for water sports enthusiasts and course participants." />
-        <meta name="author" content="" />
-        <title>Accommodation - Kite in Morocco</title>
+        <meta name="description" content="Accommodation guide for Essaouira travelers and kitesurfing students with comfortable, beach-friendly stays." />
+        <meta name="theme-color" content="#1f7a8c" />
+        <title>Accommodation | Kite in Morocco</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
         <link href="css/bootstrap.min.css" rel="stylesheet" />
         <link href="css/bootstrap-icons.css" rel="stylesheet" />
         <link href="css/templatemo-tiya-golf-club.css" rel="stylesheet" />
     </head>
-
     <body>
-        <main>
-            <!-- Navigation bar -->
-            <nav class="navbar navbar-expand-lg">
+        <header class="site-header">
+            <nav class="navbar navbar-expand-lg" aria-label="Main navigation">
                 <div class="container">
-                    <a class="navbar-brand d-flex align-items-center" href="index.html">
-                        <img src="images/logo.jpg" class="navbar-brand-image img-fluid" alt="Kite in Morocco" />
+                    <a class="navbar-brand" href="index.html#home" aria-label="Kite in Morocco home">
+                        <img src="images/logo.jpg" class="navbar-brand-image" alt="Kite in Morocco logo" />
                         <span class="navbar-brand-text">Kite <small>in Morocco</small></span>
                     </a>
                     <button
@@ -36,293 +34,153 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ms-lg-auto">
-                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="index.html#section_explore">Activities</a></li>
-                            <li class="nav-item"><a class="nav-link" href="index.html#section_4">Packages</a></li>
-                            <li class="nav-item"><a class="nav-link" href="index.html#section_5">Contact</a></li>
+                            <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="index.html#activities">Activities</a></li>
+                            <li class="nav-item"><a class="nav-link" href="index.html#packages">Packages</a></li>
+                            <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
                         </ul>
                     </div>
                 </div>
             </nav>
+        </header>
 
-            <!-- Hero Section -->
+        <main>
             <section
-                class="hero-section d-flex justify-content-center align-items-center"
+                class="hero-section"
                 style="
-                    background: linear-gradient(rgba(61, 64, 91, 0.7), rgba(61, 64, 91, 0.7)), url(&quot;images/professional-golf-player.jpg&quot;);
-                    background-size: cover;
-                    background-position: center;
+                    background:
+                        linear-gradient(rgba(15, 23, 42, 0.72), rgba(17, 91, 105, 0.66)),
+                        url(&quot;images/professional-golf-player.jpg&quot;) center/cover no-repeat;
                 "
             >
                 <div class="container">
-                    <div class="row">
+                    <div class="row align-items-center">
                         <div class="col-lg-8 col-12">
-                            <h1 class="text-white mb-3">Accommodation in Essaouira</h1>
-                            <p class="text-white lead">Comfortable stays for your water sports adventure</p>
-                            <a href="#hotels" class="btn custom-btn mt-3">View Options</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Location Benefits -->
-            <section class="section-padding">
-                <div class="container">
-                    <h2 class="text-center mb-5">Why Stay in Essaouira?</h2>
-                    <div class="row g-4">
-                        <div class="col-lg-4 col-md-6 col-12">
-                            <div class="feature-box text-center p-4">
-                                <i class="bi bi-compass" style="font-size: 2.5rem; color: #81b29a; margin-bottom: 1rem; display: block"></i>
-                                <h5 class="mb-2">Perfect Location</h5>
-                                <p>Close to all training spots. Walking distance to beaches and restaurants. Historic medina nearby.</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-12">
-                            <div class="feature-box text-center p-4">
-                                <i class="bi bi-sun" style="font-size: 2.5rem; color: #81b29a; margin-bottom: 1rem; display: block"></i>
-                                <h5 class="mb-2">Ideal Climate</h5>
-                                <p>Year-round warm weather. Consistent Atlantic winds. Perfect for water sports.</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-12">
-                            <div class="feature-box text-center p-4">
-                                <i class="bi bi-people-fill" style="font-size: 2.5rem; color: #81b29a; margin-bottom: 1rem; display: block"></i>
-                                <h5 class="mb-2">Community</h5>
-                                <p>Vibrant beach town culture. Meet other water sports enthusiasts. Great nightlife and dining.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Hotel Options -->
-            <section class="section-padding section-bg" id="hotels">
-                <div class="container">
-                    <h2 class="text-center mb-5">Partner Hotels & Accommodations</h2>
-
-                    <h4 class="mb-4 mt-4">Beachfront Hotels</h4>
-                    <div class="row g-4 mb-5">
-                        <div class="col-lg-6 col-12">
-                            <div class="hotel-card border rounded overflow-hidden">
-                                <img src="images/professional-golf-player.jpg" class="img-fluid w-100" alt="Hotel" style="height: 200px; object-fit: cover" />
-                                <div class="p-4">
-                                    <h5 class="mb-2">Beachfront Resort & Spa</h5>
-                                    <p class="text-muted mb-3">Direct beach access with pool and spa facilities</p>
-                                    <ul class="list-unstyled small mb-3">
-                                        <li class="mb-1"><i class="bi bi-check2"></i> Direct beach access</li>
-                                        <li class="mb-1"><i class="bi bi-check2"></i> Swimming pool</li>
-                                        <li class="mb-1"><i class="bi bi-check2"></i> Restaurant & bar</li>
-                                        <li class="mb-1"><i class="bi bi-check2"></i> Free WiFi</li>
-                                    </ul>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <span><strong>$80-120/night</strong></span>
-                                        <a href="index.html#section_5" class="btn custom-btn btn-sm">Inquire</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-12">
-                            <div class="hotel-card border rounded overflow-hidden">
-                                <img
-                                    src="images/girl-taking-selfie-with-friends-golf-field.jpg"
-                                    class="img-fluid w-100"
-                                    alt="Hotel"
-                                    style="height: 200px; object-fit: cover"
-                                />
-                                <div class="p-4">
-                                    <h5 class="mb-2">Oceanview Boutique Hotel</h5>
-                                    <p class="text-muted mb-3">Luxury beachfront with premium amenities</p>
-                                    <ul class="list-unstyled small mb-3">
-                                        <li class="mb-1"><i class="bi bi-check2"></i> Ocean view rooms</li>
-                                        <li class="mb-1"><i class="bi bi-check2"></i> Rooftop terrace</li>
-                                        <li class="mb-1"><i class="bi bi-check2"></i> 24/7 room service</li>
-                                        <li class="mb-1"><i class="bi bi-check2"></i> Concierge service</li>
-                                    </ul>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <span><strong>$120-180/night</strong></span>
-                                        <a href="index.html#section_5" class="btn custom-btn btn-sm">Inquire</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <h4 class="mb-4 mt-4">Budget-Friendly Options</h4>
-                    <div class="row g-4 mb-5">
-                        <div class="col-lg-6 col-12">
-                            <div class="hotel-card border rounded overflow-hidden">
-                                <img src="images/professional-golf-player.jpg" class="img-fluid w-100" alt="Hostel" style="height: 200px; object-fit: cover" />
-                                <div class="p-4">
-                                    <h5 class="mb-2">Waterfront Hostel</h5>
-                                    <p class="text-muted mb-3">Social atmosphere with private rooms available</p>
-                                    <ul class="list-unstyled small mb-3">
-                                        <li class="mb-1"><i class="bi bi-check2"></i> Private/dorm rooms</li>
-                                        <li class="mb-1"><i class="bi bi-check2"></i> Common kitchen</li>
-                                        <li class="mb-1"><i class="bi bi-check2"></i> Social events</li>
-                                        <li class="mb-1"><i class="bi bi-check2"></i> Tour desk</li>
-                                    </ul>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <span><strong>$30-60/night</strong></span>
-                                        <a href="index.html#section_5" class="btn custom-btn btn-sm">Inquire</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-12">
-                            <div class="hotel-card border rounded overflow-hidden">
-                                <img
-                                    src="images/girl-taking-selfie-with-friends-golf-field.jpg"
-                                    class="img-fluid w-100"
-                                    alt="Guesthouse"
-                                    style="height: 200px; object-fit: cover"
-                                />
-                                <div class="p-4">
-                                    <h5 class="mb-2">Riad Guesthouse</h5>
-                                    <p class="text-muted mb-3">Traditional Moroccan hospitality</p>
-                                    <ul class="list-unstyled small mb-3">
-                                        <li class="mb-1"><i class="bi bi-check2"></i> Authentic riads</li>
-                                        <li class="mb-1"><i class="bi bi-check2"></i> Breakfast included</li>
-                                        <li class="mb-1"><i class="bi bi-check2"></i> Local experience</li>
-                                        <li class="mb-1"><i class="bi bi-check2"></i> Friendly hosts</li>
-                                    </ul>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <span><strong>$40-70/night</strong></span>
-                                        <a href="index.html#section_5" class="btn custom-btn btn-sm">Inquire</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <h4 class="mb-4 mt-4">Group Accommodations</h4>
-                    <div class="row g-4">
-                        <div class="col-lg-12 col-12">
-                            <div class="hotel-card border rounded p-4">
-                                <h5 class="mb-2">Villa & Apartment Rentals</h5>
-                                <p class="text-muted mb-3">Perfect for groups, families, or teams - entire units available</p>
-                                <div class="row">
-                                    <div class="col-lg-6 col-12">
-                                        <ul class="list-unstyled small">
-                                            <li class="mb-1"><i class="bi bi-check2"></i> 2-8 bedroom options</li>
-                                            <li class="mb-1"><i class="bi bi-check2"></i> Full kitchens</li>
-                                            <li class="mb-1"><i class="bi bi-check2"></i> Living areas</li>
-                                            <li class="mb-1"><i class="bi bi-check2"></i> Parking included</li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-lg-6 col-12">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <span><strong>$200-500/night</strong> (for 4+ people)</span>
-                                            <a href="index.html#section_5" class="btn custom-btn btn-sm">Inquire</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Special Packages -->
-            <section class="section-padding">
-                <div class="container">
-                    <h2 class="text-center mb-5">Course + Accommodation Packages</h2>
-                    <div class="row g-4">
-                        <div class="col-lg-4 col-md-6 col-12">
-                            <div class="package-card border rounded p-4 text-center">
-                                <h5 class="mb-3">Economy Package</h5>
-                                <p class="text-muted mb-4">3-day course + hostel</p>
-                                <ul class="list-unstyled small mb-4">
-                                    <li class="mb-2">Beginner course</li>
-                                    <li class="mb-2">3 nights hostel</li>
-                                    <li class="mb-2">Breakfast included</li>
-                                </ul>
-                                <h4 class="text-success mb-3">$600</h4>
-                                <a href="index.html#section_5" class="btn custom-btn">Book Now</a>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-12">
-                            <div class="package-card border rounded p-4 text-center">
-                                <h5 class="mb-3">Comfort Package</h5>
-                                <p class="text-muted mb-4">5-day course + hotel</p>
-                                <ul class="list-unstyled small mb-4">
-                                    <li class="mb-2">Intermediate course</li>
-                                    <li class="mb-2">5 nights hotel</li>
-                                    <li class="mb-2">Daily breakfast</li>
-                                </ul>
-                                <h4 class="text-success mb-3">$1,350</h4>
-                                <a href="index.html#section_5" class="btn custom-btn">Book Now</a>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-12">
-                            <div class="package-card border rounded p-4 text-center">
-                                <h5 class="mb-3">Premium Package</h5>
-                                <p class="text-muted mb-4">7-day course + luxury hotel</p>
-                                <ul class="list-unstyled small mb-4">
-                                    <li class="mb-2">Advanced course</li>
-                                    <li class="mb-2">7 nights resort</li>
-                                    <li class="mb-2">All meals included</li>
-                                </ul>
-                                <h4 class="text-success mb-3">$2,100</h4>
-                                <a href="index.html#section_5" class="btn custom-btn">Book Now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Call to Action -->
-            <section class="section-padding section-bg">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-12 mx-auto text-center">
-                            <h2 class="mb-4">Ready to Plan Your Stay?</h2>
-                            <p class="lead mb-4">Contact us to arrange accommodation and book your course</p>
-                            <a href="index.html#section_5" class="btn custom-btn btn-lg">Get in Touch</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Footer -->
-            <footer class="site-footer section-padding">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-3 col-12 mb-4 mb-lg-0">
-                            <h5 class="mb-3">About Kite in Morocco</h5>
-                            <p>
-                                Premier water sports school in Essaouira since 2008. Certified instructors, world-class equipment, and unforgettable
-                                experiences.
+                            <p class="eyebrow">Accommodation</p>
+                            <h1>Stay close to the coast and the action.</h1>
+                            <p class="lead">
+                                Choose from comfortable stays near the water, the medina, and the beach—ideal for lesson trips and longer stays in Essaouira.
                             </p>
+                            <div class="hero-actions">
+                                <a href="index.html#contact" class="btn btn-primary">Ask about stays</a>
+                                <a href="#options" class="btn btn-secondary">Explore options</a>
+                            </div>
                         </div>
-                        <div class="col-lg-3 col-12 mb-4 mb-lg-0">
-                            <h5 class="mb-3">Quick Links</h5>
-                            <ul class="list-unstyled">
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="index.html#section_explore">Activities</a></li>
-                                <li><a href="index.html#section_4">Packages</a></li>
-                                <li><a href="index.html#section_5">Contact</a></li>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-padding">
+                <div class="container">
+                    <div class="section-heading">
+                        <p class="eyebrow">Why stay here</p>
+                        <h2>Comfortable, convenient, and easy to enjoy.</h2>
+                    </div>
+                    <div class="feature-grid">
+                        <div class="feature-block">
+                            <div class="feature-icon"><i class="bi bi-compass"></i></div>
+                            <h4>Perfect location</h4>
+                            <p>Close to the beach, training spots, restaurants, and local culture.</p>
+                        </div>
+                        <div class="feature-block">
+                            <div class="feature-icon"><i class="bi bi-sun"></i></div>
+                            <h4>Great climate</h4>
+                            <p>Enjoy warm weather and comfortable conditions throughout the season.</p>
+                        </div>
+                        <div class="feature-block">
+                            <div class="feature-icon"><i class="bi bi-people-fill"></i></div>
+                            <h4>Friendly community</h4>
+                            <p>Meet fellow travelers and water-sport enthusiasts in a relaxed setting.</p>
+                        </div>
+                        <div class="feature-block">
+                            <div class="feature-icon"><i class="bi bi-building"></i></div>
+                            <h4>Flexible stays</h4>
+                            <p>Ideal for solo travelers, couples, and small groups.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="options" class="section-bg section-padding">
+                <div class="container">
+                    <div class="section-heading">
+                        <p class="eyebrow">Stay options</p>
+                        <h2>Choose a place that fits your trip.</h2>
+                    </div>
+                    <div class="package-grid">
+                        <article class="package-card">
+                            <span class="badge badge-info">Beachfront</span>
+                            <h3>Beachfront Hotel</h3>
+                            <p>Direct beach access with comfortable rooms and ideal location for daily sessions.</p>
+                            <div class="package-price"><strong>$80–120</strong><span>per night</span></div>
+                            <ul>
+                                <li>Pool and restaurant</li>
+                                <li>Easy beach access</li>
+                                <li>Ideal for couples</li>
                             </ul>
-                        </div>
-                        <div class="col-lg-3 col-12 mb-4 mb-lg-0">
-                            <h5 class="mb-3">Contact</h5>
-                            <p>
-                                Phone: +212 xxx xxx xxx<br />
-                                Email: info@kiteinmorocco.com<br />
-                                Essaouira, Morocco
-                            </p>
-                        </div>
-                        <div class="col-lg-3 col-12">
-                            <h5 class="mb-3">Follow Us</h5>
-                            <div class="social-icon">
-                                <a href="#" class="bi bi-facebook"></a>
-                                <a href="#" class="bi bi-instagram"></a>
-                                <a href="#" class="bi bi-youtube"></a>
-                            </div>
-                        </div>
+                        </article>
+                        <article class="package-card">
+                            <span class="badge badge-success">Budget friendly</span>
+                            <h3>Guesthouse or hostel</h3>
+                            <p>Affordable options with friendly service and easy access to the coast.</p>
+                            <div class="package-price"><strong>$30–60</strong><span>per night</span></div>
+                            <ul>
+                                <li>Social atmosphere</li>
+                                <li>Great for solo travel</li>
+                                <li>Simple and practical</li>
+                            </ul>
+                        </article>
+                        <article class="package-card">
+                            <span class="badge badge-warning">Group stays</span>
+                            <h3>Villa rental</h3>
+                            <p>Comfortable group accommodation with space, privacy, and flexibility.</p>
+                            <div class="package-price"><strong>$200–500</strong><span>for 4+ people</span></div>
+                            <ul>
+                                <li>Shared living spaces</li>
+                                <li>Great for teams</li>
+                                <li>Private and flexible</li>
+                            </ul>
+                        </article>
                     </div>
                 </div>
-            </footer>
+            </section>
         </main>
+
+        <footer class="site-footer">
+            <div class="container">
+                <div class="footer-grid">
+                    <div>
+                        <a class="navbar-brand" href="index.html#home"
+                            ><img src="images/logo.jpg" class="navbar-brand-image" alt="Kite in Morocco logo" /><span class="navbar-brand-text"
+                                >Kite <small>in Morocco</small></span
+                            ></a
+                        >
+                    </div>
+                    <div>
+                        <h5>Quick links</h5>
+                        <ul class="footer-links">
+                            <li><a href="index.html#home">Home</a></li>
+                            <li><a href="index.html#activities">Activities</a></li>
+                            <li><a href="index.html#packages">Packages</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h5>Contact</h5>
+                        <ul class="footer-links">
+                            <li><a href="tel:+212524475992">+212 (0)5 24 47 59 92</a></li>
+                            <li><a href="mailto:info@kiteinmorocco.com">info@kiteinmorocco.com</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h5>Location</h5>
+                        <p>Essaouira, Morocco</p>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <span>© <span data-current-year></span> Kite in Morocco</span><span>Comfortable stays for every adventure.</span>
+                </div>
+            </div>
+        </footer>
 
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.bundle.min.js"></script>

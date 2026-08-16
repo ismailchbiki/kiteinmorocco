@@ -1,31 +1,46 @@
-(function ($) {
+(function () {
     "use strict";
 
-    // MENU
-    $(".navbar-collapse a").on("click", function () {
-        $(".navbar-collapse").collapse("hide");
-    });
+    const setCurrentYear = () => {
+        const yearNode = document.querySelector("[data-current-year]");
+        if (!yearNode) return;
+        yearNode.textContent = new Date().getFullYear();
+    };
 
-    // CUSTOM LINK
-    $(".smoothscroll").click(function () {
-        var el = $(this).attr("href");
-        var elWrapped = $(el);
-        var header_height = $(".navbar").height();
+    const initSmoothScroll = () => {
+        document.querySelectorAll('a[href^="#"]').forEach((link) => {
+            link.addEventListener("click", (event) => {
+                const targetId = link.getAttribute("href");
+                if (!targetId || targetId === "#") return;
 
-        scrollToDiv(elWrapped, header_height);
-        return false;
+                const target = document.querySelector(targetId);
+                if (!target) return;
 
-        function scrollToDiv(element, navheight) {
-            var offset = element.offset();
-            var offsetTop = offset.top;
-            var totalScroll = offsetTop - navheight;
+                event.preventDefault();
+                const navHeight = document.querySelector(".site-header")?.offsetHeight || 0;
+                const top = target.getBoundingClientRect().top + window.scrollY - navHeight - 12;
+                window.scrollTo({ top, behavior: "smooth" });
+            });
+        });
+    };
 
-            $("body,html").animate(
-                {
-                    scrollTop: totalScroll,
-                },
-                300,
-            );
-        }
-    });
-})(window.jQuery);
+    const initFormFeedback = () => {
+        document.querySelectorAll("form").forEach((form) => {
+            form.addEventListener("submit", (event) => {
+                const requiredFields = [...form.querySelectorAll("[required]")];
+                const invalid = requiredFields.some((field) => !field.value.trim());
+
+                if (invalid) {
+                    event.preventDefault();
+                    const firstInvalid = requiredFields.find((field) => !field.value.trim());
+                    firstInvalid?.focus();
+                    firstInvalid?.reportValidity?.();
+                }
+            });
+        });
+    };
+
+    setCurrentYear();
+    initSmoothScroll();
+    initFormFeedback();
+})();
